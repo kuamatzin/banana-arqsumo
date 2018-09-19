@@ -10,6 +10,8 @@
 
     <title>ARQMASUNO</title>
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300,400" rel="stylesheet">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>

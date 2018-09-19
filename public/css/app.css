@@ -10473,6 +10473,7 @@ a.text-dark:focus {
 
 body {
   color: #9C9C9C;
+  font-family: 'Gothic A1', sans-serif;
 }
 
 .carousel-item {
@@ -10501,6 +10502,20 @@ body {
   background-color: transparent;
   margin-top: 30px;
   margin-right: 30px;
+  cursor: pointer;
+}
+
+.text-menu {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.text-menu:hover {
+  color: #9C9C9C;
+}
+
+.pointer {
   cursor: pointer;
 }
 

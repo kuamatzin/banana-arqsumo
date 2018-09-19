@@ -47683,6 +47683,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -47760,12 +47765,7 @@ var render = function() {
                             "video",
                             {
                               staticClass: "video",
-                              attrs: {
-                                autoplay: "",
-                                loop: "",
-                                muted: "",
-                                poster: "screenshot.jpg"
-                              },
+                              attrs: { autoplay: "", loop: "", muted: "" },
                               domProps: { muted: true }
                             },
                             [
@@ -47800,8 +47800,8 @@ var render = function() {
                   staticClass: "menu",
                   attrs: {
                     src: "/images/close.png",
-                    width: "50",
-                    height: "50",
+                    width: "25",
+                    height: "25",
                     alt: "logo"
                   },
                   on: {
@@ -47814,8 +47814,8 @@ var render = function() {
                   staticClass: "menu",
                   attrs: {
                     src: "/images/menu.svg",
-                    width: "50",
-                    height: "50",
+                    width: "25",
+                    height: "25",
                     alt: "logo"
                   },
                   on: {
@@ -47910,7 +47910,7 @@ var staticRenderFns = [
                 staticStyle: { "text-decoration": "none" },
                 attrs: { href: "/categorias" }
               },
-              [_c("h1", { staticClass: "text-white" }, [_vm._v("PORTAFOLIO")])]
+              [_c("h3", { staticClass: "text-menu" }, [_vm._v("PORTAFOLIO")])]
             ),
             _vm._v(" "),
             _c(
@@ -47919,38 +47919,60 @@ var staticRenderFns = [
                 staticStyle: { "text-decoration": "none" },
                 attrs: { href: "/contacto" }
               },
-              [_c("h1", { staticClass: "text-white" }, [_vm._v("CONTACTO")])]
+              [_c("h3", { staticClass: "text-menu" }, [_vm._v("CONTACTO")])]
             )
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "mx-4 mt-5" }, [
-            _c("p", { staticClass: "text-white" }, [
+            _c("p", { staticClass: "text-menu" }, [
               _vm._v("+52 (222) 543 5467")
             ]),
             _vm._v(" "),
-            _c("p", { staticClass: "text-white" }, [
+            _c("p", { staticClass: "text-menu" }, [
               _vm._v("hello@arqmasuno.mx")
             ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "d-flex align-items-start mt-5" }, [
-            _c("img", {
-              staticClass: "ml-4",
-              attrs: {
-                src: "/images/social/instagram-white.svg",
-                alt: "instagram",
-                width: "50px"
-              }
-            }),
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://www.facebook.com/arqmasuno/?ref=br_rs",
+                  target: "_blank"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "ml-4 pointer",
+                  attrs: {
+                    src: "/images/social/instagram-white.svg",
+                    alt: "instagram",
+                    width: "30px"
+                  }
+                })
+              ]
+            ),
             _vm._v(" "),
-            _c("img", {
-              staticClass: "mx-3",
-              attrs: {
-                src: "/images/social/facebook-white.svg",
-                alt: "facebook",
-                width: "50px"
-              }
-            })
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://www.instagram.com/arqmasuno/",
+                  target: "_blank"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "mx-3 pointer",
+                  attrs: {
+                    src: "/images/social/facebook-white.svg",
+                    alt: "facebook",
+                    width: "30px"
+                  }
+                })
+              ]
+            )
           ])
         ])
       ]
