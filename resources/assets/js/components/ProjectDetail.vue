@@ -2,7 +2,10 @@
     <div class="mt-5">
         <br>
         <div class="container">
-            <h4 class="float-left ml-4 mt-5 categories" @click="backToCategories">regresar al portafolio</h4>
+            <div class="d-flex align-items-end mt-5 pointer" @click="backToCategories">
+                <i class="fas fa-arrow-left mb-3"></i>
+                <h4 class="categories ml-2">regresar al portafolio</h4>
+            </div>       
         </div>
 
         <img :src="project" class="img-fluid mt-3" width="100%">

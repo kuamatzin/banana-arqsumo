@@ -47326,6 +47326,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -47356,23 +47360,29 @@ var render = function() {
   return _c("div", [
     _c("br"),
     _vm._v(" "),
-    _c("div", { staticClass: "d-flex flex-row-reverse" }, [
-      _c(
-        "h3",
-        {
-          staticClass: "float-right mr-4 mt-5 categories",
-          on: { click: _vm.showSubcategories }
-        },
-        [_vm._v("categorias")]
-      )
+    _c("div", { staticClass: "d-flex flex-row-reverse mt-5" }, [
+      _c("div", { staticClass: "d-flex align-items-center" }, [
+        _c(
+          "h4",
+          {
+            staticClass: "categories pointer",
+            on: { click: _vm.showSubcategories }
+          },
+          [_vm._v("categorias")]
+        ),
+        _vm._v(" "),
+        _vm.show_subcategories == false
+          ? _c("i", { staticClass: "fas fa-arrow-down ml-2 mb-2" })
+          : _c("i", { staticClass: "fas fa-arrow-up ml-2 mb-2" })
+      ])
     ]),
     _vm._v(" "),
     _vm.show_subcategories
-      ? _c("div", { staticClass: "d-flex justify-content-between mt-3 mb-2" }, [
+      ? _c("div", { staticClass: "d-flex justify-content-between mt-3 mb-1" }, [
           _c(
-            "h4",
+            "p",
             {
-              staticClass: "categories",
+              staticClass: "subcategories pointer",
               on: {
                 click: function($event) {
                   _vm.selectCategory(1)
@@ -47383,9 +47393,9 @@ var render = function() {
           ),
           _vm._v(" "),
           _c(
-            "h4",
+            "p",
             {
-              staticClass: "categories",
+              staticClass: "subcategories pointer",
               on: {
                 click: function($event) {
                   _vm.selectCategory(2)
@@ -47396,9 +47406,9 @@ var render = function() {
           ),
           _vm._v(" "),
           _c(
-            "h4",
+            "p",
             {
-              staticClass: "categories",
+              staticClass: "subcategories pointer",
               on: {
                 click: function($event) {
                   _vm.selectCategory(3)
@@ -47409,9 +47419,9 @@ var render = function() {
           ),
           _vm._v(" "),
           _c(
-            "h4",
+            "p",
             {
-              staticClass: "categories",
+              staticClass: "subcategories pointer",
               on: {
                 click: function($event) {
                   _vm.selectCategory(4)
@@ -47422,9 +47432,9 @@ var render = function() {
           ),
           _vm._v(" "),
           _c(
-            "h4",
+            "p",
             {
-              staticClass: "categories",
+              staticClass: "subcategories pointer",
               on: {
                 click: function($event) {
                   _vm.selectCategory(5)
@@ -47551,7 +47561,7 @@ var render = function() {
       { attrs: { id: "images" } },
       _vm._l(_vm.images, function(image) {
         return _c("img", {
-          staticClass: "img-fluid mt-4",
+          staticClass: "pointer img-fluid mt-4",
           attrs: { src: image },
           on: {
             click: function($event) {
@@ -47710,14 +47720,10 @@ var render = function() {
       ? _c("div", { attrs: { id: "page" } }, [
           _vm._m(0),
           _vm._v(" "),
-          _c("img", {
-            staticClass: "menu",
-            attrs: {
-              src: "/images/menu.svg",
-              width: "50",
-              height: "50",
-              alt: "logo"
-            },
+          _c("i", {
+            staticClass: "fas fa-bars menu",
+            staticStyle: { "font-size": "28px", color: "#848484" },
+            attrs: { alt: "logo" },
             on: {
               click: function($event) {
                 _vm.show_menu = true
@@ -47839,7 +47845,7 @@ var staticRenderFns = [
       _c("img", {
         staticClass: "logo",
         attrs: {
-          src: "/images/logo.svg",
+          src: "/images/blacklogo.svg",
           width: "60",
           height: "60",
           alt: "logo"
@@ -48086,6 +48092,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -48190,6 +48205,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['project'],
@@ -48219,12 +48237,18 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c(
-        "h4",
+        "div",
         {
-          staticClass: "float-left ml-4 mt-5 categories",
+          staticClass: "d-flex align-items-end mt-5 pointer",
           on: { click: _vm.backToCategories }
         },
-        [_vm._v("regresar al portafolio")]
+        [
+          _c("i", { staticClass: "fas fa-arrow-left mb-3" }),
+          _vm._v(" "),
+          _c("h4", { staticClass: "categories ml-2" }, [
+            _vm._v("regresar al portafolio")
+          ])
+        ]
       )
     ]),
     _vm._v(" "),
@@ -48295,14 +48319,10 @@ var render = function() {
           [
             _vm._m(0),
             _vm._v(" "),
-            _c("img", {
-              staticClass: "menu",
-              attrs: {
-                src: "/images/menu.svg",
-                width: "50",
-                height: "50",
-                alt: "logo"
-              },
+            _c("i", {
+              staticClass: "fas fa-bars menu",
+              staticStyle: { "font-size": "28px", color: "#848484" },
+              attrs: { alt: "logo" },
               on: {
                 click: function($event) {
                   _vm.show_menu = true
@@ -48370,8 +48390,8 @@ var render = function() {
                   staticClass: "menu",
                   attrs: {
                     src: "/images/close.png",
-                    width: "50",
-                    height: "50",
+                    width: "25",
+                    height: "25",
                     alt: "logo"
                   },
                   on: {
@@ -48384,8 +48404,8 @@ var render = function() {
                   staticClass: "menu",
                   attrs: {
                     src: "/images/menu.svg",
-                    width: "50",
-                    height: "50",
+                    width: "25",
+                    height: "25",
                     alt: "logo"
                   },
                   on: {
@@ -48452,7 +48472,7 @@ var staticRenderFns = [
                 staticStyle: { "text-decoration": "none" },
                 attrs: { href: "/categorias" }
               },
-              [_c("h1", { staticClass: "text-white" }, [_vm._v("PORTAFOLIO")])]
+              [_c("h3", { staticClass: "text-menu" }, [_vm._v("PORTAFOLIO")])]
             ),
             _vm._v(" "),
             _c(
@@ -48461,38 +48481,60 @@ var staticRenderFns = [
                 staticStyle: { "text-decoration": "none" },
                 attrs: { href: "/contacto" }
               },
-              [_c("h1", { staticClass: "text-white" }, [_vm._v("CONTACTO")])]
+              [_c("h3", { staticClass: "text-menu" }, [_vm._v("CONTACTO")])]
             )
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "mx-4 mt-5" }, [
-            _c("p", { staticClass: "text-white" }, [
+            _c("p", { staticClass: "text-menu" }, [
               _vm._v("+52 (222) 543 5467")
             ]),
             _vm._v(" "),
-            _c("p", { staticClass: "text-white" }, [
+            _c("p", { staticClass: "text-menu" }, [
               _vm._v("hello@arqmasuno.mx")
             ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "d-flex align-items-start mt-5" }, [
-            _c("img", {
-              staticClass: "ml-4",
-              attrs: {
-                src: "/images/social/instagram-white.svg",
-                alt: "instagram",
-                width: "50px"
-              }
-            }),
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://www.facebook.com/arqmasuno/?ref=br_rs",
+                  target: "_blank"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "ml-4 pointer",
+                  attrs: {
+                    src: "/images/social/instagram-white.svg",
+                    alt: "instagram",
+                    width: "30px"
+                  }
+                })
+              ]
+            ),
             _vm._v(" "),
-            _c("img", {
-              staticClass: "mx-3",
-              attrs: {
-                src: "/images/social/facebook-white.svg",
-                alt: "facebook",
-                width: "50px"
-              }
-            })
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://www.instagram.com/arqmasuno/",
+                  target: "_blank"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "mx-3 pointer",
+                  attrs: {
+                    src: "/images/social/facebook-white.svg",
+                    alt: "facebook",
+                    width: "30px"
+                  }
+                })
+              ]
+            )
           ])
         ])
       ]
@@ -48647,6 +48689,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -48669,14 +48716,10 @@ var render = function() {
       ? _c("div", { attrs: { id: "page" } }, [
           _vm._m(0),
           _vm._v(" "),
-          _c("img", {
-            staticClass: "menu",
-            attrs: {
-              src: "/images/menu.svg",
-              width: "50",
-              height: "50",
-              alt: "logo"
-            },
+          _c("i", {
+            staticClass: "fas fa-bars menu",
+            staticStyle: { "font-size": "28px", color: "#848484" },
+            attrs: { alt: "logo" },
             on: {
               click: function($event) {
                 _vm.show_menu = true
@@ -48705,8 +48748,8 @@ var render = function() {
                   staticClass: "menu",
                   attrs: {
                     src: "/images/close.png",
-                    width: "50",
-                    height: "50",
+                    width: "25",
+                    height: "25",
                     alt: "logo"
                   },
                   on: {
@@ -48719,8 +48762,8 @@ var render = function() {
                   staticClass: "menu",
                   attrs: {
                     src: "/images/menu.svg",
-                    width: "50",
-                    height: "50",
+                    width: "25",
+                    height: "25",
                     alt: "logo"
                   },
                   on: {
@@ -48955,7 +48998,7 @@ var staticRenderFns = [
                 staticStyle: { "text-decoration": "none" },
                 attrs: { href: "/categorias" }
               },
-              [_c("h1", { staticClass: "text-white" }, [_vm._v("PORTAFOLIO")])]
+              [_c("h3", { staticClass: "text-menu" }, [_vm._v("PORTAFOLIO")])]
             ),
             _vm._v(" "),
             _c(
@@ -48964,38 +49007,60 @@ var staticRenderFns = [
                 staticStyle: { "text-decoration": "none" },
                 attrs: { href: "/contacto" }
               },
-              [_c("h1", { staticClass: "text-white" }, [_vm._v("CONTACTO")])]
+              [_c("h3", { staticClass: "text-menu" }, [_vm._v("CONTACTO")])]
             )
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "mx-4 mt-5" }, [
-            _c("p", { staticClass: "text-white" }, [
+            _c("p", { staticClass: "text-menu" }, [
               _vm._v("+52 (222) 543 5467")
             ]),
             _vm._v(" "),
-            _c("p", { staticClass: "text-white" }, [
+            _c("p", { staticClass: "text-menu" }, [
               _vm._v("hello@arqmasuno.mx")
             ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "d-flex align-items-start mt-5" }, [
-            _c("img", {
-              staticClass: "ml-4",
-              attrs: {
-                src: "/images/social/instagram-white.svg",
-                alt: "instagram",
-                width: "50px"
-              }
-            }),
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://www.facebook.com/arqmasuno/?ref=br_rs",
+                  target: "_blank"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "ml-4 pointer",
+                  attrs: {
+                    src: "/images/social/instagram-white.svg",
+                    alt: "instagram",
+                    width: "30px"
+                  }
+                })
+              ]
+            ),
             _vm._v(" "),
-            _c("img", {
-              staticClass: "mx-3",
-              attrs: {
-                src: "/images/social/facebook-white.svg",
-                alt: "facebook",
-                width: "50px"
-              }
-            })
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://www.instagram.com/arqmasuno/",
+                  target: "_blank"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "mx-3 pointer",
+                  attrs: {
+                    src: "/images/social/facebook-white.svg",
+                    alt: "facebook",
+                    width: "30px"
+                  }
+                })
+              ]
+            )
           ])
         ])
       ]

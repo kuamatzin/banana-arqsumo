@@ -1,7 +1,7 @@
 <template>
     <div>
         <div id="images">
-            <img v-for="image in images" :src="image" class="img-fluid mt-4" @click="projectDetail(image)">
+            <img v-for="image in images" :src="image" class="pointer img-fluid mt-4" @click="projectDetail(image)">
         </div>
     </div>
     </div>

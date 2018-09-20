@@ -1,8 +1,8 @@
 <template>
     <div>
         <div id="page" v-if="show_menu == false">
-            <a href="/"><img src="/images/logo.svg" width="60" height="60" alt="logo" class="logo"></a>
-            <img src="/images/menu.svg" width="50" height="50" alt="logo" class="menu" @click="show_menu = true">
+            <a href="/"><img src="/images/blacklogo.svg" width="60" height="60" alt="logo" class="logo"></a>
+            <i class="fas fa-bars menu" style="font-size: 28px; color: #848484" alt="logo" @click="show_menu = true"></i>
     
             <div class="content-page" v-if="show_menu == false">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
