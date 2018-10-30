@@ -10471,6 +10471,34 @@ a.text-dark:focus {
   }
 }
 
+html {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+
+  html {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+
+  html {
+    font-size: 13px;
+  }
+}
+
 body {
   color: #9C9C9C;
   font-family: 'Gothic A1', sans-serif;
@@ -10506,12 +10534,25 @@ body {
 }
 
 .text-menu {
+  font-size: 2.3rem;
+  font-weight: 600;
   cursor: pointer;
   color: white;
   text-decoration: none;
 }
 
 .text-menu:hover {
+  color: #9C9C9C;
+}
+
+.text-menu-footer {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.text-menu-footer:hover {
   color: #9C9C9C;
 }
 
@@ -10533,5 +10574,9 @@ body {
   background-size: cover;
   -webkit-transition: 1s opacity;
   transition: 1s opacity;
+}
+
+.send {
+  background-color: #565656 !important;
 }
 

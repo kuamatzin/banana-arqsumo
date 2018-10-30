@@ -36034,7 +36034,7 @@ module.exports = function spread(callback) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global, setImmediate) {/*!
- * Vue.js v2.5.16
+ * Vue.js v2.5.17
  * (c) 2014-2018 Evan You
  * Released under the MIT License.
  */
@@ -41123,7 +41123,7 @@ Object.defineProperty(Vue, 'FunctionalRenderContext', {
   value: FunctionalRenderContext
 });
 
-Vue.version = '2.5.16';
+Vue.version = '2.5.17';
 
 /*  */
 
@@ -47368,7 +47368,7 @@ var render = function() {
             staticClass: "categories pointer",
             on: { click: _vm.showSubcategories }
           },
-          [_vm._v("categorias")]
+          [_vm._v("CATEGORÍAS")]
         ),
         _vm._v(" "),
         _vm.show_subcategories == false
@@ -47389,7 +47389,7 @@ var render = function() {
                 }
               }
             },
-            [_vm._v("com.")]
+            [_vm._v("comercial")]
           ),
           _vm._v(" "),
           _c(
@@ -47402,7 +47402,7 @@ var render = function() {
                 }
               }
             },
-            [_vm._v("int.")]
+            [_vm._v("interiorismo")]
           ),
           _vm._v(" "),
           _c(
@@ -47415,7 +47415,7 @@ var render = function() {
                 }
               }
             },
-            [_vm._v("pais.")]
+            [_vm._v("paisajismo")]
           ),
           _vm._v(" "),
           _c(
@@ -47428,7 +47428,7 @@ var render = function() {
                 }
               }
             },
-            [_vm._v("res.")]
+            [_vm._v("residencial")]
           ),
           _vm._v(" "),
           _c(
@@ -47441,7 +47441,7 @@ var render = function() {
                 }
               }
             },
-            [_vm._v("vert.")]
+            [_vm._v("v. vertical")]
           )
         ])
       : _vm._e()
@@ -47636,7 +47636,6 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
 //
 //
 //
@@ -47904,81 +47903,94 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "d-flex align-items-center",
+        staticClass: "d-flex align-items-center flex-column",
         staticStyle: { height: "100vh" }
       },
       [
-        _c("div", [
-          _c("div", { staticClass: "mx-4" }, [
+        _c(
+          "div",
+          {
+            staticClass: "flex-grow-1 d-flex flex-column justify-content-center"
+          },
+          [
             _c(
               "a",
               {
                 staticStyle: { "text-decoration": "none" },
                 attrs: { href: "/categorias" }
               },
-              [_c("h3", { staticClass: "text-menu" }, [_vm._v("PORTAFOLIO")])]
+              [
+                _c("h3", { staticClass: "text-menu text-center" }, [
+                  _vm._v("PORTAFOLIO")
+                ])
+              ]
             ),
             _vm._v(" "),
             _c(
               "a",
               {
+                staticClass: "mt-2",
                 staticStyle: { "text-decoration": "none" },
                 attrs: { href: "/contacto" }
               },
-              [_c("h3", { staticClass: "text-menu" }, [_vm._v("CONTACTO")])]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "mx-4 mt-5" }, [
-            _c("p", { staticClass: "text-menu" }, [
-              _vm._v("+52 (222) 543 5467")
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "text-menu" }, [
-              _vm._v("hello@arqmasuno.mx")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "d-flex align-items-start mt-5" }, [
-            _c(
-              "a",
-              {
-                attrs: {
-                  href: "https://www.facebook.com/arqmasuno/?ref=br_rs",
-                  target: "_blank"
-                }
-              },
               [
-                _c("img", {
-                  staticClass: "ml-4 pointer",
-                  attrs: {
-                    src: "/images/social/instagram-white.svg",
-                    alt: "instagram",
-                    width: "30px"
-                  }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                attrs: {
-                  href: "https://www.instagram.com/arqmasuno/",
-                  target: "_blank"
-                }
-              },
-              [
-                _c("img", {
-                  staticClass: "mx-3 pointer",
-                  attrs: {
-                    src: "/images/social/facebook-white.svg",
-                    alt: "facebook",
-                    width: "30px"
-                  }
-                })
+                _c("h3", { staticClass: "text-menu text-center" }, [
+                  _vm._v("CONTACTO")
+                ])
               ]
             )
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://www.facebook.com/arqmasuno/?ref=br_rs",
+                target: "_blank"
+              }
+            },
+            [
+              _c("img", {
+                staticClass: "ml-4 pointer",
+                attrs: {
+                  src: "/images/social/instagram-white.svg",
+                  alt: "instagram",
+                  width: "30px"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://www.instagram.com/arqmasuno/",
+                target: "_blank"
+              }
+            },
+            [
+              _c("img", {
+                staticClass: "mx-3 pointer",
+                attrs: {
+                  src: "/images/social/facebook-white.svg",
+                  alt: "facebook",
+                  width: "30px"
+                }
+              })
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mt-3 mb-5" }, [
+          _c("p", { staticClass: "text-menu-footer text-center" }, [
+            _vm._v("+52 (222) 543 5467")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "text-menu-footer text-center" }, [
+            _vm._v("hello@arqmasuno.mx")
           ])
         ])
       ]
@@ -48049,7 +48061,6 @@ module.exports = Component.exports
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ProjectDetail_vue__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ProjectDetail_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__ProjectDetail_vue__);
-//
 //
 //
 //
@@ -48460,81 +48471,94 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "d-flex align-items-center",
+        staticClass: "d-flex align-items-center flex-column",
         staticStyle: { height: "100vh" }
       },
       [
-        _c("div", [
-          _c("div", { staticClass: "mx-4" }, [
+        _c(
+          "div",
+          {
+            staticClass: "flex-grow-1 d-flex flex-column justify-content-center"
+          },
+          [
             _c(
               "a",
               {
                 staticStyle: { "text-decoration": "none" },
                 attrs: { href: "/categorias" }
               },
-              [_c("h3", { staticClass: "text-menu" }, [_vm._v("PORTAFOLIO")])]
+              [
+                _c("h3", { staticClass: "text-menu text-center" }, [
+                  _vm._v("PORTAFOLIO")
+                ])
+              ]
             ),
             _vm._v(" "),
             _c(
               "a",
               {
+                staticClass: "mt-2",
                 staticStyle: { "text-decoration": "none" },
                 attrs: { href: "/contacto" }
               },
-              [_c("h3", { staticClass: "text-menu" }, [_vm._v("CONTACTO")])]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "mx-4 mt-5" }, [
-            _c("p", { staticClass: "text-menu" }, [
-              _vm._v("+52 (222) 543 5467")
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "text-menu" }, [
-              _vm._v("hello@arqmasuno.mx")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "d-flex align-items-start mt-5" }, [
-            _c(
-              "a",
-              {
-                attrs: {
-                  href: "https://www.facebook.com/arqmasuno/?ref=br_rs",
-                  target: "_blank"
-                }
-              },
               [
-                _c("img", {
-                  staticClass: "ml-4 pointer",
-                  attrs: {
-                    src: "/images/social/instagram-white.svg",
-                    alt: "instagram",
-                    width: "30px"
-                  }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                attrs: {
-                  href: "https://www.instagram.com/arqmasuno/",
-                  target: "_blank"
-                }
-              },
-              [
-                _c("img", {
-                  staticClass: "mx-3 pointer",
-                  attrs: {
-                    src: "/images/social/facebook-white.svg",
-                    alt: "facebook",
-                    width: "30px"
-                  }
-                })
+                _c("h3", { staticClass: "text-menu text-center" }, [
+                  _vm._v("CONTACTO")
+                ])
               ]
             )
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://www.facebook.com/arqmasuno/?ref=br_rs",
+                target: "_blank"
+              }
+            },
+            [
+              _c("img", {
+                staticClass: "ml-4 pointer",
+                attrs: {
+                  src: "/images/social/instagram-white.svg",
+                  alt: "instagram",
+                  width: "30px"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://www.instagram.com/arqmasuno/",
+                target: "_blank"
+              }
+            },
+            [
+              _c("img", {
+                staticClass: "mx-3 pointer",
+                attrs: {
+                  src: "/images/social/facebook-white.svg",
+                  alt: "facebook",
+                  width: "30px"
+                }
+              })
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mt-3 mb-5" }, [
+          _c("p", { staticClass: "text-menu-footer text-center" }, [
+            _vm._v("+52 (222) 543 5467")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "text-menu-footer text-center" }, [
+            _vm._v("hello@arqmasuno.mx")
           ])
         ])
       ]
@@ -48603,7 +48627,6 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
 //
 //
 //
@@ -48801,7 +48824,9 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container mt-5" }, [
       _c("div", { staticClass: "container mt-5" }, [
-        _c("h2", { staticClass: "text-center mt-5" }, [_vm._v("CONTÁCTANOS")]),
+        _c("strong", [
+          _c("h2", { staticClass: "text-center mt-5" }, [_vm._v("CONTÁCTANOS")])
+        ]),
         _vm._v(" "),
         _c("div", { staticClass: "mt-4" }, [
           _c("p", { staticClass: "text-center" }, [
@@ -48926,7 +48951,7 @@ var staticRenderFns = [
             _c(
               "button",
               {
-                staticClass: "btn btn-secondary",
+                staticClass: "btn btn-secondary send",
                 staticStyle: { padding: "0.375rem 2.75rem" },
                 attrs: { type: "submit" }
               },
@@ -48986,81 +49011,94 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "d-flex align-items-center",
+        staticClass: "d-flex align-items-center flex-column",
         staticStyle: { height: "100vh" }
       },
       [
-        _c("div", [
-          _c("div", { staticClass: "mx-4" }, [
+        _c(
+          "div",
+          {
+            staticClass: "flex-grow-1 d-flex flex-column justify-content-center"
+          },
+          [
             _c(
               "a",
               {
                 staticStyle: { "text-decoration": "none" },
                 attrs: { href: "/categorias" }
               },
-              [_c("h3", { staticClass: "text-menu" }, [_vm._v("PORTAFOLIO")])]
+              [
+                _c("h3", { staticClass: "text-menu text-center" }, [
+                  _vm._v("PORTAFOLIO")
+                ])
+              ]
             ),
             _vm._v(" "),
             _c(
               "a",
               {
+                staticClass: "mt-2",
                 staticStyle: { "text-decoration": "none" },
                 attrs: { href: "/contacto" }
               },
-              [_c("h3", { staticClass: "text-menu" }, [_vm._v("CONTACTO")])]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "mx-4 mt-5" }, [
-            _c("p", { staticClass: "text-menu" }, [
-              _vm._v("+52 (222) 543 5467")
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "text-menu" }, [
-              _vm._v("hello@arqmasuno.mx")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "d-flex align-items-start mt-5" }, [
-            _c(
-              "a",
-              {
-                attrs: {
-                  href: "https://www.facebook.com/arqmasuno/?ref=br_rs",
-                  target: "_blank"
-                }
-              },
               [
-                _c("img", {
-                  staticClass: "ml-4 pointer",
-                  attrs: {
-                    src: "/images/social/instagram-white.svg",
-                    alt: "instagram",
-                    width: "30px"
-                  }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                attrs: {
-                  href: "https://www.instagram.com/arqmasuno/",
-                  target: "_blank"
-                }
-              },
-              [
-                _c("img", {
-                  staticClass: "mx-3 pointer",
-                  attrs: {
-                    src: "/images/social/facebook-white.svg",
-                    alt: "facebook",
-                    width: "30px"
-                  }
-                })
+                _c("h3", { staticClass: "text-menu text-center" }, [
+                  _vm._v("CONTACTO")
+                ])
               ]
             )
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://www.facebook.com/arqmasuno/?ref=br_rs",
+                target: "_blank"
+              }
+            },
+            [
+              _c("img", {
+                staticClass: "ml-4 pointer",
+                attrs: {
+                  src: "/images/social/instagram-white.svg",
+                  alt: "instagram",
+                  width: "30px"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://www.instagram.com/arqmasuno/",
+                target: "_blank"
+              }
+            },
+            [
+              _c("img", {
+                staticClass: "mx-3 pointer",
+                attrs: {
+                  src: "/images/social/facebook-white.svg",
+                  alt: "facebook",
+                  width: "30px"
+                }
+              })
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mt-3 mb-5" }, [
+          _c("p", { staticClass: "text-menu-footer text-center" }, [
+            _vm._v("+52 (222) 543 5467")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "text-menu-footer text-center" }, [
+            _vm._v("hello@arqmasuno.mx")
           ])
         ])
       ]
