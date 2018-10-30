@@ -6,15 +6,8 @@
     
             <div class="content-page" v-if="show_menu == false">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
                     <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active" style="background-image: url('/images/slider/1.jpg')"></div>
-                        <div class="carousel-item" style="background-image: url('/images/slider/2.jpg')"></div>
-                        <div class="carousel-item">
+                        <div class="carousel-item active">
                             <video playsinline autoplay loop muted class="video">
                                 <source src="images/slider/video.mp4" type="video/mp4">
                             </video>
