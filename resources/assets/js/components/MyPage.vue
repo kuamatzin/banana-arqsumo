@@ -15,7 +15,7 @@
                         <div class="carousel-item active" style="background-image: url('/images/slider/1.jpg')"></div>
                         <div class="carousel-item" style="background-image: url('/images/slider/2.jpg')"></div>
                         <div class="carousel-item">
-                            <video autoplay loop muted class="video">
+                            <video playsinline autoplay loop muted class="video">
                                 <source src="images/slider/video.mp4" type="video/mp4">
                             </video>
                         </div>

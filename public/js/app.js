@@ -47770,7 +47770,12 @@ var render = function() {
                             "video",
                             {
                               staticClass: "video",
-                              attrs: { autoplay: "", loop: "", muted: "" },
+                              attrs: {
+                                playsinline: "",
+                                autoplay: "",
+                                loop: "",
+                                muted: ""
+                              },
                               domProps: { muted: true }
                             },
                             [

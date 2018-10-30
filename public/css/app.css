@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);/*!
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Archivo+Narrow);/*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -10472,6 +10472,7 @@ a.text-dark:focus {
 }
 
 html {
+  font-family: "Archivo Narrow", sans-serif;
   font-size: 16px;
 }
 
@@ -10487,7 +10488,7 @@ html {
   /* phones */
 
   html {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -10495,13 +10496,13 @@ html {
   /* portrait phones */
 
   html {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
 body {
   color: #9C9C9C;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
 .carousel-item {
@@ -10509,6 +10510,10 @@ body {
   min-height: 300px;
   background: no-repeat center center scroll;
   background-size: cover;
+}
+
+.categories {
+  font-family: "Archivo Narrow", sans-serif;
 }
 
 .logo {
@@ -10534,7 +10539,7 @@ body {
 }
 
 .text-menu {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-weight: 600;
   cursor: pointer;
   color: white;
@@ -10546,7 +10551,7 @@ body {
 }
 
 .text-menu-footer {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
   color: white;
   text-decoration: none;
