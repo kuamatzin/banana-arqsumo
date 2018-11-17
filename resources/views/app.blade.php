@@ -23,5 +23,13 @@
     </div>
 
     <script src="/js/app.js"></script>
+    <script>
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        };
+        if(isMobileDevice()){
+            window.location.replace(window.location.href + 'm');
+        }
+    </script>
 </body>
 </html>

@@ -5,31 +5,35 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-$narrow: 'Archivo Narrow', sans-serif;
+$narrow: 'Archivo Narrow',
+sans-serif;
 
 html {
-  font-family: $narrow;
-  font-size: 16px;
+    font-family: $narrow;
+    font-size: 16px;
 }
 
 @media only screen and (min-width: 768px) {
+
     /* tablets and desktop */
     html {
-      font-size: 16px;
+        font-size: 16px;
     }
 }
 
 @media only screen and (max-width: 767px) {
+
     /* phones */
     html {
-      font-size: 14px;
+        font-size: 14px;
     }
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
+
     /* portrait phones */
     html {
-      font-size: 14px;
+        font-size: 14px;
     }
 }
 
@@ -49,7 +53,7 @@ body {
 }
 
 .categories {
-  font-family: $narrow;
+    font-family: $narrow;
 }
 
 .logo {
@@ -80,16 +84,42 @@ body {
     cursor: pointer;
     color: white;
     text-decoration: none;
+
+    &:hover {
+        color: #9C9C9C;
+    }
+}
+
+.text-menu-inverse {
+    font-size: 2.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #9C9C9C;
+    text-decoration: none;
+
+    &:hover {
+        color: #282E41;
+    }
+}
+
+.text-menu-desktop {
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+
     &:hover {
         color: #9C9C9C;
     }
 }
 
 .text-menu-footer {
-  font-size: 1.1rem;
+    font-size: 1.1rem;
     cursor: pointer;
     color: white;
     text-decoration: none;
+
     &:hover {
         color: #9C9C9C;
     }
@@ -99,20 +129,20 @@ body {
     cursor: pointer;
 }
 
-.video { 
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: -100;
-	transform: translateX(-50%) translateY(-50%);
-	background-size: cover;
-	transition: 1s opacity;
+.video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
 }
 
 .send {
-  background-color: #565656 !important;
+    background-color: #565656 !important;
 }

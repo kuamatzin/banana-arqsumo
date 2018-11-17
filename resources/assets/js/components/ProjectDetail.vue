@@ -10,7 +10,7 @@
 
         <img :src="project" class="img-fluid mt-3" width="100%">
 
-        <div class="container">
+        <div class="container mb-5">
             <h3 class="mt-5 categories" style="color: #565656">DIAGONAL 28</h3>
             <br>
             <p class="mt-3">PROYECTO EJECUTIVO</p>

@@ -16,10 +16,15 @@ window.Vue = require('vue');
  */
 
 Vue.component('categories-menu', require('./components/CategoriesMenu.vue'));
+Vue.component('desktop-categories-menu', require('./components/desktop/CategoriesMenu.vue'));
 Vue.component('categories', require('./components/Categories.vue'));
+Vue.component('desktop-categories', require('./components/desktop/Categories.vue'));
 Vue.component('my-page', require('./components/MyPage.vue'));
+Vue.component('desktop-my-page', require('./components/desktop/MyPage.vue'));
 Vue.component('categories-page', require('./components/CategoriesPage.vue'));
+Vue.component('desktop-categories-page', require('./components/desktop/CategoriesPage.vue'));
 Vue.component('contact-page', require('./components/ContactPage.vue'));
+Vue.component('desktop-contact-page', require('./components/desktop/ContactPage.vue'));
 
 window.Events = new Vue();
 

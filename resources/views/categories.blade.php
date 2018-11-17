@@ -1,5 +1,5 @@
 @extends('app')
 
 @section('content')
-    <categories-page></categories-page>
+    <desktop-categories-page></desktop-categories-page>
 @endsection

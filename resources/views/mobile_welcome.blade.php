@@ -2,6 +2,6 @@
 
 @section('content')
 <header>
-    <desktop-my-page></desktop-my-page>
+    <my-page></my-page>
 </header>
 @endsection

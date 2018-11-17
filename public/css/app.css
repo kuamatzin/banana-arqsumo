@@ -10550,6 +10550,30 @@ body {
   color: #9C9C9C;
 }
 
+.text-menu-inverse {
+  font-size: 2.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #9C9C9C;
+  text-decoration: none;
+}
+
+.text-menu-inverse:hover {
+  color: #282E41;
+}
+
+.text-menu-desktop {
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.text-menu-desktop:hover {
+  color: #9C9C9C;
+}
+
 .text-menu-footer {
   font-size: 1.1rem;
   cursor: pointer;
