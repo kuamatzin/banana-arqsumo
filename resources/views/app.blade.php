@@ -31,7 +31,7 @@
             let current_location = window.location.href
             let last_character = current_location.charAt(current_location.length - 1)
             if(last_character != 'm') {
-                window.location.replace(window.location.href + 'm');
+                window.location.replace(window.location.href + '/m');
             }
         }
     </script>
