@@ -9,11 +9,11 @@
             </div>
         </div>
         <div v-if="show_subcategories" class="d-flex justify-content-between mt-3 mb-1">
-            <p class="subcategories pointer" @click="selectCategory(1)">comercial</p>
-            <p class="subcategories pointer" @click="selectCategory(2)">interiorismo</p>
-            <p class="subcategories pointer" @click="selectCategory(3)">paisajismo</p>
-            <p class="subcategories pointer" @click="selectCategory(4)">residencial</p>
-            <p class="subcategories pointer" @click="selectCategory(5)">v. vertical</p>
+            <p class="subcategories pointer" :class="{ active: category_selected == 1 }" @click="selectCategory(1)">comercial</p>
+            <p class="subcategories pointer" :class="{ active: category_selected == 2 }" @click="selectCategory(2)">interiorismo</p>
+            <p class="subcategories pointer" :class="{ active: category_selected == 3 }" @click="selectCategory(3)">paisajismo</p>
+            <p class="subcategories pointer" :class="{ active: category_selected == 4 }" @click="selectCategory(4)">residencial</p>
+            <p class="subcategories pointer" :class="{ active: category_selected == 5 }" @click="selectCategory(5)">v. vertical</p>
         </div>
     </div>
 </template>
@@ -22,12 +22,14 @@
     export default {
         data() {
             return {
-                show_subcategories: false
+                show_subcategories: false,
+                category_selected: 1
             }
         },
 
         methods: {
             selectCategory(category){
+                this.category_selected = category;
                 Events.$emit('selectedCategory', category);
             },
 
@@ -37,3 +39,15 @@
         }
     }
 </script>
+
+<style scoped>
+    .active {
+        color: #282E41;
+    }
+    .subcategories {
+        font-size: 1.5rem;
+    }
+    .subcategories:hover{
+        color: #282E41;
+    }
+</style>
