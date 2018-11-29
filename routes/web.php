@@ -43,3 +43,7 @@ Route::resource('/m/projects', 'ProjectController');
 Route::get('/multimedia/{project}', 'MultimediaController@get');
 Route::post('/multimedia/{project}', 'MultimediaController@store');
 Route::delete('/multimedia/{multimedia}', 'MultimediaController@destroy');
+
+Route::get('/test', function(){
+    return view('test');
+});

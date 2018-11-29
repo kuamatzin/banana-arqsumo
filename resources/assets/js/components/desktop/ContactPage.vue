@@ -69,7 +69,7 @@
                                 <p class="text-center info"><strong>Tel: +52 (222) 543 5467</strong></p>
                                 <p class="text-center info"><strong>Email: hello@arqmasuno.mx</strong></p>
 
-                                <p class="text-center info">Camino Real Momoxpan 1811 - 19, 72777</p>
+                                <p class="text-center info mt-4">Camino Real Momoxpan 1811 - 19, 72777</p>
                                 <p class="text-center info">San Pedro Cholula, Puebla</p>
     
                                 <div class="d-flex justify-content-center mt-4">
@@ -104,6 +104,8 @@
 
 <style scoped>
     .info {
+        margin: 0;
+        padding: 0;
         font-size: 1.4rem;
     }
 </style>

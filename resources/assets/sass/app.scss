@@ -1,17 +1,22 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
-
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-$narrow: 'Archivo Narrow',
-sans-serif;
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('/fonts/HelveticaNeueLTStd-MdCn.woff2') format('woff2'),
+        url('/fonts/HelveticaNeueLTStd-MdCn.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
 
 html {
-    font-family: $narrow;
+    font-family: 'Helvetica Neue LT Std';
+    font-weight: 600;
+    font-style: normal;
     font-size: 16px;
 }
+
 
 @media only screen and (min-width: 768px) {
 
@@ -39,7 +44,10 @@ html {
 
 body {
     color: #9C9C9C;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Helvetica Neue LT Std';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
 }
 
 .carousel-item {
@@ -53,7 +61,10 @@ body {
 }
 
 .categories {
-    font-family: $narrow;
+    font-family: 'Helvetica Neue LT Std';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
 }
 
 .logo {
