@@ -114,10 +114,12 @@
   text-align: center;
 }
 
+.project-detail:focus .image,
 .project-detail:hover .image {
   opacity: 0.4;
 }
 
+.project-detail:focus .middle
 .project-detail:hover .middle {
   opacity: 1;
 }
