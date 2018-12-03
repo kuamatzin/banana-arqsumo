@@ -1,7 +1,12 @@
 <template>
     <div class="row mb-5">
         <div id="images" class="col-md-4" v-for="image in images">
-            <img :src="image" class="pointer img-fluid mt-4" @click="projectDetail(image)">
+            <div class="project-detail">
+                <img :src="image" class="image pointer img-fluid mt-4" @click="projectDetail(image)">
+                <div class="middle">
+                    <div class="text strong">Bourbon Street</div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -84,3 +89,43 @@
         }
     }
 </script>
+
+<style scoped>
+.project-detail {
+    background-color: black;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-detail:hover .image {
+  opacity: 0.4;
+}
+
+.project-detail:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 16px 32px;
+}
+</style>
