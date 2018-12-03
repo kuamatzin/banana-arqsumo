@@ -48216,13 +48216,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             images: false,
-            category_images: [['/images/categorias/1.jpg', '/images/categorias/2.png', '/images/categorias/3.png', '/images/categorias/1.jpg', '/images/categorias/2.png', '/images/categorias/3.png'], ['/images/categorias/2.png', '/images/categorias/1.jpg', '/images/categorias/3.png', '/images/categorias/1.jpg', '/images/categorias/2.png', '/images/categorias/3.png'], ['/images/categorias/3.png', '/images/categorias/2.png', '/images/categorias/3.png', '/images/categorias/1.jpg', '/images/categorias/2.png', '/images/categorias/3.png'], ['/images/categorias/1.jpg', '/images/categorias/2.png', '/images/categorias/3.png', '/images/categorias/1.jpg', '/images/categorias/2.png', '/images/categorias/3.png'], ['/images/categorias/1.jpg', '/images/categorias/2.png', '/images/categorias/3.png', '/images/categorias/1.jpg', '/images/categorias/2.png', '/images/categorias/3.png']]
+            category_images: [['/images/categorias/comercial/Bourbon Street/1.jpg', '/images/categorias/comercial/La Burguesa/1.jpg', '/images/categorias/comercial/La Estrella/1.jpg', '/images/categorias/comercial/Mercado La Paz/1.jpg', '/images/categorias/comercial/Pabellón de las Flores/1.jpg', '/images/categorias/comercial/Padre Mezcal/1.jpg', '/images/categorias/comercial/Sens Nightclub/1.jpg', '/images/categorias/comercial/Simonetta Bakery/1.jpg', '/images/categorias/comercial/Zapatitos Azul y Rosa/1.jpg'], ['/images/categorias/interiorismo/Casa San Andrés/1.jpg', '/images/categorias/interiorismo/Casa Totolac/1.jpg', '/images/categorias/interiorismo/Encinos 7/1.jpg'], ['/images/categorias/paisajismo/Kathrein/1.jpg'], ['/images/categorias/residencial/Adriático 63/3.jpg', '/images/categorias/residencial/Almendros 19/1.jpg', '/images/categorias/residencial/Almendros 29/1.jpg', '/images/categorias/residencial/Antigua Cementera/1.jpg', '/images/categorias/residencial/Casa Carcaña 53/1.jpg', '/images/categorias/residencial/Casa Cortázar/1.jpg', '/images/categorias/residencial/Casa Querétaro 35/1.jpg', '/images/categorias/residencial/Casa RZ/1.jpg', '/images/categorias/residencial/Casa Sana Anita/1.jpg', '/images/categorias/residencial/El Sabinal/1.jpg', '/images/categorias/residencial/Hacienda Zacatelco/1.jpg', '/images/categorias/residencial/Navojoa/1.jpg', '/images/categorias/residencial/Palenque/1.jpg', '/images/categorias/residencial/Sabinos 2/1.jpg', '/images/categorias/residencial/San Cosme/1.jpg'], ['/images/categorias/vertical/Casa del Patio/1.jpg', '/images/categorias/vertical/Diagonal 28/1.jpg', '/images/categorias/vertical/Huexo 45/1.jpg', '/images/categorias/vertical/Momoxpan 2405/1.jpg', '/images/categorias/vertical/Sur 18 Agua Santa/1.jpg', '/images/categorias/vertical/Teziutlán 53/1.jpg', '/images/categorias/vertical/Torre San Martinito/1.jpg', '/images/categorias/vertical/X-601/1.jpg']]
         };
     },
 
     methods: {
         getImagesFromCategory: function getImagesFromCategory(category) {
-            this.images = this.category_images[category];
+            this.images = this.category_images[category - 1];
         },
         projectDetail: function projectDetail(image) {
             this.$emit('loadProjectDetail', image);
@@ -48341,13 +48341,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             images: false,
-            category_images: [['/images/categorias/1.jpg', '/images/categorias/2.png', '/images/categorias/3.png', '/images/categorias/1.jpg', '/images/categorias/2.png', '/images/categorias/3.png'], ['/images/categorias/2.png', '/images/categorias/1.jpg', '/images/categorias/3.png', '/images/categorias/1.jpg', '/images/categorias/2.png', '/images/categorias/3.png'], ['/images/categorias/3.png', '/images/categorias/2.png', '/images/categorias/3.png', '/images/categorias/1.jpg', '/images/categorias/2.png', '/images/categorias/3.png'], ['/images/categorias/1.jpg', '/images/categorias/2.png', '/images/categorias/3.png', '/images/categorias/1.jpg', '/images/categorias/2.png', '/images/categorias/3.png'], ['/images/categorias/1.jpg', '/images/categorias/2.png', '/images/categorias/3.png', '/images/categorias/1.jpg', '/images/categorias/2.png', '/images/categorias/3.png']]
+            category_images: [['/images/categorias/comercial/Bourbon Street/1.jpg', '/images/categorias/comercial/La Burguesa/1.jpg', '/images/categorias/comercial/La Estrella/1.jpg', '/images/categorias/comercial/Mercado La Paz/1.jpg', '/images/categorias/comercial/Pabellón de las Flores/1.jpg', '/images/categorias/comercial/Padre Mezcal/1.jpg', '/images/categorias/comercial/Sens Nightclub/1.jpg', '/images/categorias/comercial/Simonetta Bakery/1.jpg', '/images/categorias/comercial/Zapatitos Azul y Rosa/1.jpg'], ['/images/categorias/interiorismo/Casa San Andrés/1.jpg', '/images/categorias/interiorismo/Casa Totolac/1.jpg', '/images/categorias/interiorismo/Encinos 7/1.jpg'], ['/images/categorias/paisajismo/Kathrein/1.jpg'], ['/images/categorias/residencial/Adriático 63/3.jpg', '/images/categorias/residencial/Almendros 19/1.jpg', '/images/categorias/residencial/Almendros 29/1.jpg', '/images/categorias/residencial/Antigua Cementera/1.jpg', '/images/categorias/residencial/Casa Carcaña 53/1.jpg', '/images/categorias/residencial/Casa Cortázar/1.jpg', '/images/categorias/residencial/Casa Querétaro 35/1.jpg', '/images/categorias/residencial/Casa RZ/1.jpg', '/images/categorias/residencial/Casa Sana Anita/1.jpg', '/images/categorias/residencial/El Sabinal/1.jpg', '/images/categorias/residencial/Hacienda Zacatelco/1.jpg', '/images/categorias/residencial/Navojoa/1.jpg', '/images/categorias/residencial/Palenque/1.jpg', '/images/categorias/residencial/Sabinos 2/1.jpg', '/images/categorias/residencial/San Cosme/1.jpg'], ['/images/categorias/vertical/Casa del Patio/1.jpg', '/images/categorias/vertical/Diagonal 28/1.jpg', '/images/categorias/vertical/Huexo 45/1.jpg', '/images/categorias/vertical/Momoxpan 2405/1.jpg', '/images/categorias/vertical/Sur 18 Agua Santa/1.jpg', '/images/categorias/vertical/Teziutlán 53/1.jpg', '/images/categorias/vertical/Torre San Martinito/1.jpg', '/images/categorias/vertical/X-601/1.jpg']]
         };
     },
 
     methods: {
         getImagesFromCategory: function getImagesFromCategory(category) {
-            this.images = this.category_images[category];
+            this.images = this.category_images[category - 1];
         },
         projectDetail: function projectDetail(image) {
             this.$emit('loadProjectDetail', image);
@@ -48365,7 +48365,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "row" },
+    { staticClass: "row mb-5" },
     _vm._l(_vm.images, function(image) {
       return _c("div", { staticClass: "col-md-4", attrs: { id: "images" } }, [
         _c("img", {
@@ -49239,12 +49239,40 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['project'],
 
+    watch: {
+        project: function project() {
+            this.url_images = this.project.slice(0, -5);
+        }
+    },
+
     data: function data() {
-        return {};
+        return {
+            url_images: ''
+        };
     },
 
 
@@ -49283,15 +49311,94 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _c("img", {
-      staticClass: "img-fluid mt-3",
-      attrs: { src: _vm.project, width: "100%" }
-    }),
+    _c(
+      "div",
+      {
+        staticClass: "carousel slide",
+        attrs: { id: "carouselExampleControls", "data-ride": "carousel" }
+      },
+      [
+        _c("div", { staticClass: "carousel-inner" }, [
+          _c("div", { staticClass: "carousel-item active" }, [
+            _c("img", {
+              staticClass: "d-block w-100",
+              attrs: { src: _vm.project }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "carousel-item" }, [
+            _c("img", {
+              staticClass: "d-block w-100",
+              attrs: { src: _vm.url_images + "2.jpg" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "carousel-item" }, [
+            _c("img", {
+              staticClass: "d-block w-100",
+              attrs: { src: _vm.url_images + "3.jpg" }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1)
+      ]
+    ),
     _vm._v(" "),
-    _vm._m(0)
+    _vm._m(2)
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "carousel-control-prev",
+        attrs: {
+          href: "#carouselExampleControls",
+          role: "button",
+          "data-slide": "prev"
+        }
+      },
+      [
+        _c("span", {
+          staticClass: "carousel-control-prev-icon",
+          attrs: { "aria-hidden": "true" }
+        }),
+        _vm._v(" "),
+        _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "carousel-control-next",
+        attrs: {
+          href: "#carouselExampleControls",
+          role: "button",
+          "data-slide": "next"
+        }
+      },
+      [
+        _c("span", {
+          staticClass: "carousel-control-next-icon",
+          attrs: { "aria-hidden": "true" }
+        }),
+        _vm._v(" "),
+        _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
+      ]
+    )
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

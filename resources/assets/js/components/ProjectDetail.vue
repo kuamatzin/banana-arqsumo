@@ -8,7 +8,27 @@
             </div>       
         </div>
 
-        <img :src="project" class="img-fluid mt-3" width="100%">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" :src="project">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" :src="url_images + '2.jpg'">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" :src="url_images + '3.jpg'">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
 
         <div class="container mb-5">
             <h1 class="mt-5 strong" style="color: #565656">DIAGONAL 28</h1>
@@ -29,9 +49,15 @@
     export default {
         props: ['project'],
 
+        watch: {
+            project(){
+                this.url_images = this.project.slice(0, -5);
+            }
+        },
+
         data(){
             return {
-
+                url_images: ''
             }
         },
 

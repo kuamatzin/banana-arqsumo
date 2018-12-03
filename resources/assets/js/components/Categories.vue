@@ -21,55 +21,61 @@
                 images: false,
                 category_images: [
                     [
-                        '/images/categorias/1.jpg',
-                        '/images/categorias/2.png',
-                        '/images/categorias/3.png',
-                        '/images/categorias/1.jpg',
-                        '/images/categorias/2.png',
-                        '/images/categorias/3.png'
+                        '/images/categorias/comercial/Bourbon Street/1.jpg',
+                        '/images/categorias/comercial/La Burguesa/1.jpg',
+                        '/images/categorias/comercial/La Estrella/1.jpg',
+                        '/images/categorias/comercial/Mercado La Paz/1.jpg',
+                        '/images/categorias/comercial/Pabellón de las Flores/1.jpg',
+                        '/images/categorias/comercial/Padre Mezcal/1.jpg',
+                        '/images/categorias/comercial/Sens Nightclub/1.jpg',
+                        '/images/categorias/comercial/Simonetta Bakery/1.jpg',
+                        '/images/categorias/comercial/Zapatitos Azul y Rosa/1.jpg',
                     ],
 
                     [
-                        '/images/categorias/2.png',
-                        '/images/categorias/1.jpg',
-                        '/images/categorias/3.png',
-                        '/images/categorias/1.jpg',
-                        '/images/categorias/2.png',
-                        '/images/categorias/3.png'
+                        '/images/categorias/interiorismo/Casa San Andrés/1.jpg',
+                        '/images/categorias/interiorismo/Casa Totolac/1.jpg',
+                        '/images/categorias/interiorismo/Encinos 7/1.jpg',
                     ],
 
                     [
-                        '/images/categorias/3.png',
-                        '/images/categorias/2.png',
-                        '/images/categorias/3.png',
-                        '/images/categorias/1.jpg',
-                        '/images/categorias/2.png',
-                        '/images/categorias/3.png'
+                        '/images/categorias/paisajismo/Kathrein/1.jpg'
                     ],
 
                     [
-                        '/images/categorias/1.jpg',
-                        '/images/categorias/2.png',
-                        '/images/categorias/3.png',
-                        '/images/categorias/1.jpg',
-                        '/images/categorias/2.png',
-                        '/images/categorias/3.png'
+                        '/images/categorias/residencial/Adriático 63/3.jpg',
+                        '/images/categorias/residencial/Almendros 19/1.jpg',
+                        '/images/categorias/residencial/Almendros 29/1.jpg',
+                        '/images/categorias/residencial/Antigua Cementera/1.jpg',
+                        '/images/categorias/residencial/Casa Carcaña 53/1.jpg',
+                        '/images/categorias/residencial/Casa Cortázar/1.jpg',
+                        '/images/categorias/residencial/Casa Querétaro 35/1.jpg',
+                        '/images/categorias/residencial/Casa RZ/1.jpg',
+                        '/images/categorias/residencial/Casa Sana Anita/1.jpg',
+                        '/images/categorias/residencial/El Sabinal/1.jpg',
+                        '/images/categorias/residencial/Hacienda Zacatelco/1.jpg',
+                        '/images/categorias/residencial/Navojoa/1.jpg',
+                        '/images/categorias/residencial/Palenque/1.jpg',
+                        '/images/categorias/residencial/Sabinos 2/1.jpg',
+                        '/images/categorias/residencial/San Cosme/1.jpg',
                     ],
 
                     [
-                        '/images/categorias/1.jpg',
-                        '/images/categorias/2.png',
-                        '/images/categorias/3.png',
-                        '/images/categorias/1.jpg',
-                        '/images/categorias/2.png',
-                        '/images/categorias/3.png'
+                        '/images/categorias/vertical/Casa del Patio/1.jpg',
+                        '/images/categorias/vertical/Diagonal 28/1.jpg',
+                        '/images/categorias/vertical/Huexo 45/1.jpg',
+                        '/images/categorias/vertical/Momoxpan 2405/1.jpg',
+                        '/images/categorias/vertical/Sur 18 Agua Santa/1.jpg',
+                        '/images/categorias/vertical/Teziutlán 53/1.jpg',
+                        '/images/categorias/vertical/Torre San Martinito/1.jpg',
+                        '/images/categorias/vertical/X-601/1.jpg'
                     ]
                 ]
             }
         },
         methods: {
             getImagesFromCategory(category){
-                this.images = this.category_images[category]
+                this.images = this.category_images[category - 1]
             },
 
             projectDetail(image){
