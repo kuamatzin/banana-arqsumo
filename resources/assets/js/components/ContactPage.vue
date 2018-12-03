@@ -6,7 +6,7 @@
             <br><br><br>
             <div class="container mt-5">
                 <div class="container mt-5">
-                    <strong><h2 class="text-center mt-5">CONTÁCTANOS</h2></strong>
+                    <strong><h2 class="text-center mt-5 strong">CONTÁCTANOS</h2></strong>
     
                     <div class="mt-4">
                         <p class="text-center">Tel: 222 543 5467</p>

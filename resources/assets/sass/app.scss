@@ -10,8 +10,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Helvetica Neue LT Std Thin';
+    src: url('/fonts/HelveticaNeueLTStd-ThCn.woff2') format('woff2'),
+        url('/fonts/HelveticaNeueLTStd-ThCn.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
 html {
-    font-family: 'Helvetica Neue LT Std';
+    font-family: 'Helvetica Neue LT Std Thin';
     font-weight: 600;
     font-style: normal;
     font-size: 16px;
@@ -44,7 +52,7 @@ html {
 
 body {
     color: #9C9C9C;
-    font-family: 'Helvetica Neue LT Std';
+    font-family: 'Helvetica Neue LT Std Thin';
     font-weight: 600;
     font-style: normal;
     font-size: 16px;
@@ -90,6 +98,7 @@ body {
 }
 
 .text-menu {
+    font-family: 'Helvetica Neue LT Std';
     font-size: 2.2rem;
     font-weight: 600;
     cursor: pointer;
@@ -102,6 +111,7 @@ body {
 }
 
 .text-menu-inverse {
+    font-family: 'Helvetica Neue LT Std';
     font-size: 2.2rem;
     font-weight: 600;
     cursor: pointer;
@@ -156,4 +166,8 @@ body {
 
 .send {
     background-color: #565656 !important;
+}
+
+.strong {
+    font-family: 'Helvetica Neue LT Std';
 }

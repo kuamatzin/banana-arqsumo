@@ -39,12 +39,14 @@
 
 <style scoped>
     .active {
+        font-family: 'Helvetica Neue LT Std';
         color: #282E41;
     }
     .subcategories {
         font-size: 1.5rem;
     }
     .subcategories:hover{
+        font-family: 'Helvetica Neue LT Std';
         color: #282E41;
     }
 </style>

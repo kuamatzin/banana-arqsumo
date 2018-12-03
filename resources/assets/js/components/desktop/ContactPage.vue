@@ -24,7 +24,7 @@
     
                     <div class="col-md-6">
                         <div class="container mt-5 mb-5">
-                            <strong><h2 class="ml-4 mt-5">CONTÁCTANOS</h2></strong>
+                            <strong><h2 class="ml-4 mt-5 strong">CONTÁCTANOS</h2></strong>
     
                             <form class="mx-4 mt-5">
                                 <div class="form-group">
@@ -66,8 +66,8 @@
                                     <img src="/images/blacklogo.svg" width="100" height="100" alt="logo">
                                 </div>
     
-                                <p class="text-center info"><strong>Tel: +52 (222) 543 5467</strong></p>
-                                <p class="text-center info"><strong>Email: hello@arqmasuno.mx</strong></p>
+                                <p class="text-center info strong"><strong>Tel: +52 (222) 543 5467</strong></p>
+                                <p class="text-center info strong"><strong>Email: hello@arqmasuno.mx</strong></p>
 
                                 <p class="text-center info mt-4">Camino Real Momoxpan 1811 - 19, 72777</p>
                                 <p class="text-center info">San Pedro Cholula, Puebla</p>

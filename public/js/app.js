@@ -47709,7 +47709,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.active[data-v-7691e212] {\n    color: #282E41;\n}\n.subcategories[data-v-7691e212] {\n    font-size: 1.5rem;\n}\n.subcategories[data-v-7691e212]:hover{\n    color: #282E41;\n}\n", ""]);
+exports.push([module.i, "\n.active[data-v-7691e212] {\n    font-family: 'Helvetica Neue LT Std';\n    color: #282E41;\n}\n.subcategories[data-v-7691e212] {\n    font-size: 1.5rem;\n}\n.subcategories[data-v-7691e212]:hover{\n    font-family: 'Helvetica Neue LT Std';\n    color: #282E41;\n}\n", ""]);
 
 // exports
 
@@ -47993,7 +47993,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.active[data-v-a6f7f036] {\n    color: #282E41;\n}\n.subcategories[data-v-a6f7f036] {\n    font-size: 1.5rem;\n}\n.subcategories[data-v-a6f7f036]:hover{\n    color: #282E41;\n}\n", ""]);
+exports.push([module.i, "\n.active[data-v-a6f7f036] {\n    font-family: 'Helvetica Neue LT Std';\n    color: #282E41;\n}\n.subcategories[data-v-a6f7f036] {\n    font-size: 1.5rem;\n}\n.subcategories[data-v-a6f7f036]:hover{\n    font-family: 'Helvetica Neue LT Std';\n    color: #282E41;\n}\n", ""]);
 
 // exports
 
@@ -48858,6 +48858,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -48875,106 +48881,146 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("div", { attrs: { id: "page" } }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _c("div", { staticClass: "content-page" }, [
+        _c(
+          "div",
+          {
+            staticClass: "carousel slide",
+            attrs: { id: "carouselExampleIndicators", "data-ride": "carousel" }
+          },
+          [
+            _vm._m(2),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "carousel-inner", attrs: { role: "listbox" } },
+              [
+                _c("div", { staticClass: "carousel-item active" }, [
+                  _c(
+                    "video",
+                    {
+                      staticClass: "video",
+                      attrs: {
+                        playsinline: "",
+                        autoplay: "",
+                        loop: "",
+                        muted: ""
+                      },
+                      domProps: { muted: true }
+                    },
+                    [
+                      _c("source", {
+                        attrs: {
+                          src: "/images/slider/video.mp4",
+                          type: "video/mp4"
+                        }
+                      })
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", {
+                  staticClass: "carousel-item",
+                  staticStyle: {
+                    "background-image": "url('/images/slider/1.jpg')"
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", {
+                  staticClass: "carousel-item",
+                  staticStyle: {
+                    "background-image": "url('/images/slider/2.jpg')"
+                  }
+                })
+              ]
+            )
+          ]
+        )
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("div", { attrs: { id: "page" } }, [
-        _c("a", { attrs: { href: "/" } }, [
-          _c("img", {
-            staticClass: "logo",
-            attrs: {
-              src: "/images/whitelogo.svg",
-              width: "60",
-              height: "60",
-              alt: "logo"
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "menu" }, [
-          _c("div", { staticClass: "row mr-5" }, [
-            _c("div", { staticClass: "col-md-5" }, [
-              _c(
-                "a",
-                {
-                  staticStyle: { "text-decoration": "none" },
-                  attrs: { href: "/categorias" }
-                },
-                [_c("h3", { staticClass: "text-menu" }, [_vm._v("PORTAFOLIO")])]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-2" }),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-5" }, [
-              _c(
-                "a",
-                {
-                  staticStyle: { "text-decoration": "none" },
-                  attrs: { href: "/contacto" }
-                },
-                [_c("h3", { staticClass: "text-menu" }, [_vm._v("CONTACTO")])]
-              )
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "content-page" }, [
+    return _c("a", { attrs: { href: "/" } }, [
+      _c("img", {
+        staticClass: "logo",
+        attrs: {
+          src: "/images/whitelogo.svg",
+          width: "60",
+          height: "60",
+          alt: "logo"
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "menu" }, [
+      _c("div", { staticClass: "row mr-5" }, [
+        _c("div", { staticClass: "col-md-5 col-sm-5 col-5" }, [
           _c(
-            "div",
+            "a",
             {
-              staticClass: "carousel slide",
-              attrs: {
-                id: "carouselExampleIndicators",
-                "data-ride": "carousel"
-              }
+              staticStyle: { "text-decoration": "none" },
+              attrs: { href: "/categorias" }
             },
-            [
-              _c("ol", { staticClass: "carousel-indicators" }, [
-                _c("li", {
-                  staticClass: "active",
-                  attrs: {
-                    "data-target": "#carouselExampleIndicators",
-                    "data-slide-to": "0"
-                  }
-                }),
-                _vm._v(" "),
-                _c("li", {
-                  attrs: {
-                    "data-target": "#carouselExampleIndicators",
-                    "data-slide-to": "1"
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "carousel-inner", attrs: { role: "listbox" } },
-                [
-                  _c("div", {
-                    staticClass: "carousel-item active",
-                    staticStyle: {
-                      "background-image": "url('/images/slider/1.jpg')"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("div", {
-                    staticClass: "carousel-item",
-                    staticStyle: {
-                      "background-image": "url('/images/slider/2.jpg')"
-                    }
-                  })
-                ]
-              )
-            ]
+            [_c("h3", { staticClass: "text-menu" }, [_vm._v("PORTAFOLIO")])]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-2 col-sm-2 col-2" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-5 col-sm-5 col-5" }, [
+          _c(
+            "a",
+            {
+              staticStyle: { "text-decoration": "none" },
+              attrs: { href: "/contacto" }
+            },
+            [_c("h3", { staticClass: "text-menu" }, [_vm._v("CONTACTO")])]
           )
         ])
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ol", { staticClass: "carousel-indicators" }, [
+      _c("li", {
+        staticClass: "active",
+        attrs: {
+          "data-target": "#carouselExampleIndicators",
+          "data-slide-to": "0"
+        }
+      }),
+      _vm._v(" "),
+      _c("li", {
+        attrs: {
+          "data-target": "#carouselExampleIndicators",
+          "data-slide-to": "1"
+        }
+      }),
+      _vm._v(" "),
+      _c("li", {
+        attrs: {
+          "data-target": "#carouselExampleIndicators",
+          "data-slide-to": "2"
+        }
+      })
     ])
   }
 ]
@@ -49155,7 +49201,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.return[data-v-90aec9ba]:hover{\n    color: #282E41;\n}\n.details[data-v-90aec9ba] {\n    margin: 0;\n    padding: 0;\n}\n", ""]);
+exports.push([module.i, "\n.return[data-v-90aec9ba]:hover{\n    color: #282E41;\n}\n.details[data-v-90aec9ba] {\n    font-size: 1.2rem;\n    margin: 0;\n    padding: 0;\n}\n", ""]);
 
 // exports
 
@@ -49230,7 +49276,7 @@ var render = function() {
         [
           _c("i", { staticClass: "fas fa-arrow-left mb-3 return" }),
           _vm._v(" "),
-          _c("h4", { staticClass: "categories ml-2 return" }, [
+          _c("h4", { staticClass: "ml-2 return" }, [
             _vm._v("regresar al portafolio")
           ])
         ]
@@ -49252,30 +49298,41 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container mb-5" }, [
       _c(
-        "h3",
-        { staticClass: "mt-5 categories", staticStyle: { color: "#565656" } },
+        "h1",
+        { staticClass: "mt-5 strong", staticStyle: { color: "#565656" } },
         [_vm._v("DIAGONAL 28")]
       ),
       _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("p", { staticClass: "mt-3 details" }, [_vm._v("PROYECTO EJECUTIVO")]),
+      _c("p", { staticClass: "mt-4 details" }, [_vm._v("PROYECTO EJECUTIVO")]),
       _vm._v(" "),
       _c("p", { staticClass: "details" }, [
         _vm._v("TERRENO "),
-        _c("strong", { staticStyle: { color: "#565656" } }, [_vm._v("461M")])
+        _c(
+          "strong",
+          { staticClass: "strong", staticStyle: { color: "#565656" } },
+          [_vm._v("461M")]
+        )
       ]),
       _vm._v(" "),
       _c("p", { staticClass: "details" }, [
         _vm._v("CONSTRUCCIÓN "),
-        _c("strong", { staticStyle: { color: "#565656" } }, [_vm._v("1,957M2")])
+        _c(
+          "strong",
+          { staticClass: "strong", staticStyle: { color: "#565656" } },
+          [_vm._v("1,957M2")]
+        )
       ]),
       _vm._v(" "),
       _c("p", { staticClass: "details" }, [_vm._v("UBICACIÓN DEL PROYECTO")]),
       _vm._v(" "),
-      _c("strong", { staticStyle: { color: "#565656" } }, [
-        _vm._v("SAN PEDRO, CHOLULA")
-      ])
+      _c(
+        "p",
+        {
+          staticClass: "details strong mb-5",
+          staticStyle: { color: "#565656" }
+        },
+        [_vm._v("SAN PEDRO, CHOLULA")]
+      )
     ])
   }
 ]
@@ -50045,7 +50102,9 @@ var staticRenderFns = [
     return _c("div", { staticClass: "container mt-5" }, [
       _c("div", { staticClass: "container mt-5" }, [
         _c("strong", [
-          _c("h2", { staticClass: "text-center mt-5" }, [_vm._v("CONTÁCTANOS")])
+          _c("h2", { staticClass: "text-center mt-5 strong" }, [
+            _vm._v("CONTÁCTANOS")
+          ])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "mt-4" }, [
@@ -50608,7 +50667,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "col-md-6" }, [
               _c("div", { staticClass: "container mt-5 mb-5" }, [
                 _c("strong", [
-                  _c("h2", { staticClass: "ml-4 mt-5" }, [
+                  _c("h2", { staticClass: "ml-4 mt-5 strong" }, [
                     _vm._v("CONTÁCTANOS")
                   ])
                 ]),
@@ -50761,11 +50820,11 @@ var staticRenderFns = [
                         ]
                       ),
                       _vm._v(" "),
-                      _c("p", { staticClass: "text-center info" }, [
+                      _c("p", { staticClass: "text-center info strong" }, [
                         _c("strong", [_vm._v("Tel: +52 (222) 543 5467")])
                       ]),
                       _vm._v(" "),
-                      _c("p", { staticClass: "text-center info" }, [
+                      _c("p", { staticClass: "text-center info strong" }, [
                         _c("strong", [_vm._v("Email: hello@arqmasuno.mx")])
                       ]),
                       _vm._v(" "),
