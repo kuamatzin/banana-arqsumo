@@ -36400,7 +36400,7 @@ module.exports = function spread(callback) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global, setImmediate) {/*!
- * Vue.js v2.5.17
+ * Vue.js v2.5.16
  * (c) 2014-2018 Evan You
  * Released under the MIT License.
  */
@@ -41489,7 +41489,7 @@ Object.defineProperty(Vue, 'FunctionalRenderContext', {
   value: FunctionalRenderContext
 });
 
-Vue.version = '2.5.17';
+Vue.version = '2.5.16';
 
 /*  */
 
@@ -48396,17 +48396,21 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(88)
+}
 var normalizeComponent = __webpack_require__(1)
 /* script */
 var __vue_script__ = __webpack_require__(61)
 /* template */
-var __vue_template__ = __webpack_require__(62)
+var __vue_template__ = __webpack_require__(90)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = null
+var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-1433c45c"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -48508,282 +48512,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 62 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm.show_menu == false
-      ? _c("div", { attrs: { id: "page" } }, [
-          _vm._m(0),
-          _vm._v(" "),
-          _c("i", {
-            staticClass: "fas fa-bars menu",
-            staticStyle: { "font-size": "28px", color: "#848484" },
-            attrs: { alt: "logo" },
-            on: {
-              click: function($event) {
-                _vm.show_menu = true
-              }
-            }
-          }),
-          _vm._v(" "),
-          _vm.show_menu == false
-            ? _c("div", { staticClass: "content-page" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "carousel slide",
-                    attrs: {
-                      id: "carouselExampleIndicators",
-                      "data-ride": "carousel"
-                    }
-                  },
-                  [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "carousel-inner",
-                        attrs: { role: "listbox" }
-                      },
-                      [
-                        _c("div", { staticClass: "carousel-item active" }, [
-                          _c(
-                            "video",
-                            {
-                              staticClass: "video",
-                              attrs: {
-                                playsinline: "",
-                                autoplay: "",
-                                loop: "",
-                                muted: ""
-                              },
-                              domProps: { muted: true }
-                            },
-                            [
-                              _c("source", {
-                                attrs: {
-                                  src: "/images/slider/video.mp4",
-                                  type: "video/mp4"
-                                }
-                              })
-                            ]
-                          )
-                        ])
-                      ]
-                    )
-                  ]
-                )
-              ])
-            : _vm._e()
-        ])
-      : _c(
-          "div",
-          {
-            staticClass: "pl-4",
-            staticStyle: { "background-color": "#565656", height: "100vh" },
-            attrs: { id: "menu" }
-          },
-          [
-            _vm._m(1),
-            _vm._v(" "),
-            _vm.show_menu == true
-              ? _c("img", {
-                  staticClass: "menu",
-                  attrs: {
-                    src: "/images/close.png",
-                    width: "25",
-                    height: "25",
-                    alt: "logo"
-                  },
-                  on: {
-                    click: function($event) {
-                      _vm.show_menu = false
-                    }
-                  }
-                })
-              : _c("img", {
-                  staticClass: "menu",
-                  attrs: {
-                    src: "/images/menu.svg",
-                    width: "25",
-                    height: "25",
-                    alt: "logo"
-                  },
-                  on: {
-                    click: function($event) {
-                      _vm.show_menu = false
-                    }
-                  }
-                }),
-            _vm._v(" "),
-            _vm._m(2)
-          ]
-        )
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "/" } }, [
-      _c("img", {
-        staticClass: "logo",
-        attrs: {
-          src: "/images/blacklogo.svg",
-          width: "60",
-          height: "60",
-          alt: "logo"
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "/" } }, [
-      _c("img", {
-        staticClass: "logo",
-        attrs: {
-          src: "/images/logo.svg",
-          width: "60",
-          height: "60",
-          alt: "logo"
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "d-flex align-items-center flex-column",
-        staticStyle: { height: "100vh" }
-      },
-      [
-        _c(
-          "div",
-          {
-            staticClass: "flex-grow-1 d-flex flex-column justify-content-center"
-          },
-          [
-            _c(
-              "a",
-              {
-                staticStyle: { "text-decoration": "none" },
-                attrs: { href: "/categorias" }
-              },
-              [
-                _c("h3", { staticClass: "text-menu text-center" }, [
-                  _vm._v("PORTAFOLIO")
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass: "mt-2",
-                staticStyle: { "text-decoration": "none" },
-                attrs: { href: "/contacto" }
-              },
-              [
-                _c("h3", { staticClass: "text-menu text-center" }, [
-                  _vm._v("CONTACTO")
-                ])
-              ]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c("div", [
-          _c(
-            "a",
-            {
-              attrs: {
-                href: "https://www.facebook.com/arqmasuno/?ref=br_rs",
-                target: "_blank"
-              }
-            },
-            [
-              _c("img", {
-                staticClass: "ml-4 pointer",
-                attrs: {
-                  src: "/images/social/instagram-white.svg",
-                  alt: "instagram",
-                  width: "30px"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              attrs: {
-                href: "https://www.instagram.com/arqmasuno/",
-                target: "_blank"
-              }
-            },
-            [
-              _c("img", {
-                staticClass: "mx-3 pointer",
-                attrs: {
-                  src: "/images/social/facebook-white.svg",
-                  alt: "facebook",
-                  width: "30px"
-                }
-              })
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "mt-3 mb-5" }, [
-          _c("p", { staticClass: "text-menu-footer text-center" }, [
-            _vm._v("+52 (222) 543 5467")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "text-menu-footer text-center" }, [
-            _vm._v("hello@arqmasuno.mx")
-          ])
-        ])
-      ]
-    )
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-1433c45c", module.exports)
-  }
-}
-
-/***/ }),
+/* 62 */,
 /* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(91)
+}
 var normalizeComponent = __webpack_require__(1)
 /* script */
 var __vue_script__ = __webpack_require__(64)
 /* template */
-var __vue_template__ = __webpack_require__(65)
+var __vue_template__ = __webpack_require__(93)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = null
+var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-3ece72b6"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -48874,166 +48622,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 65 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { attrs: { id: "page" } }, [
-      _vm._m(0),
-      _vm._v(" "),
-      _vm._m(1),
-      _vm._v(" "),
-      _c("div", { staticClass: "content-page" }, [
-        _c(
-          "div",
-          {
-            staticClass: "carousel slide",
-            attrs: { id: "carouselExampleIndicators", "data-ride": "carousel" }
-          },
-          [
-            _vm._m(2),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "carousel-inner", attrs: { role: "listbox" } },
-              [
-                _c("div", { staticClass: "carousel-item active" }, [
-                  _c(
-                    "video",
-                    {
-                      staticClass: "video",
-                      attrs: {
-                        playsinline: "",
-                        autoplay: "",
-                        loop: "",
-                        muted: ""
-                      },
-                      domProps: { muted: true }
-                    },
-                    [
-                      _c("source", {
-                        attrs: {
-                          src: "/images/slider/video.mp4",
-                          type: "video/mp4"
-                        }
-                      })
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", {
-                  staticClass: "carousel-item",
-                  staticStyle: {
-                    "background-image": "url('/images/slider/1.jpg')"
-                  }
-                }),
-                _vm._v(" "),
-                _c("div", {
-                  staticClass: "carousel-item",
-                  staticStyle: {
-                    "background-image": "url('/images/slider/2.jpg')"
-                  }
-                })
-              ]
-            )
-          ]
-        )
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "/" } }, [
-      _c("img", {
-        staticClass: "logo",
-        attrs: {
-          src: "/images/whitelogo.svg",
-          width: "60",
-          height: "60",
-          alt: "logo"
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "menu" }, [
-      _c("div", { staticClass: "row mr-5" }, [
-        _c("div", { staticClass: "col-md-5 col-sm-5 col-5" }, [
-          _c(
-            "a",
-            {
-              staticStyle: { "text-decoration": "none" },
-              attrs: { href: "/categorias" }
-            },
-            [_c("h3", { staticClass: "text-menu" }, [_vm._v("PORTAFOLIO")])]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-2 col-sm-2 col-2" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-5 col-sm-5 col-5" }, [
-          _c(
-            "a",
-            {
-              staticStyle: { "text-decoration": "none" },
-              attrs: { href: "/contacto" }
-            },
-            [_c("h3", { staticClass: "text-menu" }, [_vm._v("CONTACTO")])]
-          )
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ol", { staticClass: "carousel-indicators" }, [
-      _c("li", {
-        staticClass: "active",
-        attrs: {
-          "data-target": "#carouselExampleIndicators",
-          "data-slide-to": "0"
-        }
-      }),
-      _vm._v(" "),
-      _c("li", {
-        attrs: {
-          "data-target": "#carouselExampleIndicators",
-          "data-slide-to": "1"
-        }
-      }),
-      _vm._v(" "),
-      _c("li", {
-        attrs: {
-          "data-target": "#carouselExampleIndicators",
-          "data-slide-to": "2"
-        }
-      })
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-3ece72b6", module.exports)
-  }
-}
-
-/***/ }),
+/* 65 */,
 /* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -49088,7 +48677,6 @@ module.exports = Component.exports
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ProjectDetail_vue__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ProjectDetail_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__ProjectDetail_vue__);
-//
 //
 //
 //
@@ -49201,7 +48789,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.return[data-v-90aec9ba]:hover{\n    color: #282E41;\n}\n.details[data-v-90aec9ba] {\n    font-size: 1.2rem;\n    margin: 0;\n    padding: 0;\n}\n", ""]);
+exports.push([module.i, "\n.return[data-v-90aec9ba]:hover {\n  color: #282e41;\n}\n.details[data-v-90aec9ba] {\n  font-size: 1.2rem;\n  margin: 0;\n  padding: 0;\n}\n.carousel .item img[data-v-90aec9ba] {\n  max-height: 768px;\n  min-width: auto;\n}\n", ""]);
 
 // exports
 
@@ -49259,28 +48847,41 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['project'],
+  props: ["project"],
 
-    watch: {
-        project: function project() {
-            this.url_images = this.project.slice(0, -5);
-        }
-    },
-
-    data: function data() {
-        return {
-            url_images: ''
-        };
-    },
-
-
-    methods: {
-        backToCategories: function backToCategories() {
-            this.$emit('loadCategories');
-        }
+  watch: {
+    project: function project() {
+      this.url_images = this.project.slice(0, -5);
     }
+  },
+
+  data: function data() {
+    return {
+      url_images: ""
+    };
+  },
+
+
+  methods: {
+    backToCategories: function backToCategories() {
+      this.$emit("loadCategories");
+    }
+  }
 });
 
 /***/ }),
@@ -49403,17 +49004,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container mb-5" }, [
+    return _c("div", { staticClass: "container" }, [
       _c(
         "h1",
-        { staticClass: "mt-5 strong", staticStyle: { color: "#565656" } },
+        { staticClass: "strong mt-5", staticStyle: { color: "#565656" } },
         [_vm._v("DIAGONAL 28")]
       ),
       _vm._v(" "),
       _c("p", { staticClass: "mt-4 details" }, [_vm._v("PROYECTO EJECUTIVO")]),
       _vm._v(" "),
       _c("p", { staticClass: "details" }, [
-        _vm._v("TERRENO "),
+        _vm._v("TERRENO\n      "),
         _c(
           "strong",
           { staticClass: "strong", staticStyle: { color: "#565656" } },
@@ -49422,7 +49023,7 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("p", { staticClass: "details" }, [
-        _vm._v("CONSTRUCCIÓN "),
+        _vm._v("CONSTRUCCIÓN\n      "),
         _c(
           "strong",
           { staticClass: "strong", staticStyle: { color: "#565656" } },
@@ -49462,68 +49063,63 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _vm.show_menu == false
-      ? _c(
-          "div",
-          { attrs: { id: "page" } },
-          [
-            _vm._m(0),
-            _vm._v(" "),
-            _c("i", {
-              staticClass: "fas fa-bars menu",
-              staticStyle: { "font-size": "28px", color: "#848484" },
-              attrs: { alt: "logo" },
-              on: {
-                click: function($event) {
-                  _vm.show_menu = true
-                }
+      ? _c("div", [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("i", {
+            staticClass: "fas fa-bars menu",
+            staticStyle: { "font-size": "28px", color: "#848484" },
+            attrs: { alt: "logo" },
+            on: {
+              click: function($event) {
+                _vm.show_menu = true
               }
-            }),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "container mt-5" },
-              [
-                _c("categories-menu", {
-                  directives: [
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value: _vm.show_project_detail == false,
-                      expression: "show_project_detail == false"
-                    }
-                  ]
-                }),
-                _vm._v(" "),
-                _c("categories", {
-                  directives: [
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value: _vm.show_project_detail == false,
-                      expression: "show_project_detail == false"
-                    }
-                  ],
-                  on: { loadProjectDetail: _vm.loadProjectDetail }
-                })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("project-detail", {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value: _vm.show_project_detail == true,
-                  expression: "show_project_detail == true"
-                }
-              ],
-              attrs: { project: _vm.project },
-              on: { loadCategories: _vm.loadCategories }
-            })
-          ],
-          1
-        )
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "container mt-5" },
+            [
+              _c("categories-menu", {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.show_project_detail == false,
+                    expression: "show_project_detail == false"
+                  }
+                ]
+              }),
+              _vm._v(" "),
+              _c("categories", {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.show_project_detail == false,
+                    expression: "show_project_detail == false"
+                  }
+                ],
+                on: { loadProjectDetail: _vm.loadProjectDetail }
+              }),
+              _vm._v(" "),
+              _c("project-detail", {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.show_project_detail == true,
+                    expression: "show_project_detail == true"
+                  }
+                ],
+                attrs: { project: _vm.project },
+                on: { loadCategories: _vm.loadCategories }
+              })
+            ],
+            1
+          )
+        ])
       : _c(
           "div",
           {
@@ -51014,6 +50610,510 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 85 */,
+/* 86 */,
+/* 87 */,
+/* 88 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(89);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(4)("35e1de80", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1433c45c\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./MyPage.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1433c45c\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./MyPage.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 89 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.carousel-item[data-v-1433c45c] {\n    height: 100vh;\n    min-height: 300px;\n    background: no-repeat center center scroll;\n    background-size: cover;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm.show_menu == false
+      ? _c("div", { attrs: { id: "page" } }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("i", {
+            staticClass: "fas fa-bars menu",
+            staticStyle: { "font-size": "28px", color: "#848484" },
+            attrs: { alt: "logo" },
+            on: {
+              click: function($event) {
+                _vm.show_menu = true
+              }
+            }
+          }),
+          _vm._v(" "),
+          _vm.show_menu == false
+            ? _c("div", { staticClass: "content-page" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "carousel slide",
+                    attrs: {
+                      id: "carouselExampleIndicators",
+                      "data-ride": "carousel"
+                    }
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "carousel-inner",
+                        attrs: { role: "listbox" }
+                      },
+                      [
+                        _c("div", { staticClass: "carousel-item active" }, [
+                          _c(
+                            "video",
+                            {
+                              staticClass: "video",
+                              attrs: {
+                                playsinline: "",
+                                autoplay: "",
+                                loop: "",
+                                muted: ""
+                              },
+                              domProps: { muted: true }
+                            },
+                            [
+                              _c("source", {
+                                attrs: {
+                                  src: "/images/slider/video.mp4",
+                                  type: "video/mp4"
+                                }
+                              })
+                            ]
+                          )
+                        ])
+                      ]
+                    )
+                  ]
+                )
+              ])
+            : _vm._e()
+        ])
+      : _c(
+          "div",
+          {
+            staticClass: "pl-4",
+            staticStyle: { "background-color": "#565656", height: "100vh" },
+            attrs: { id: "menu" }
+          },
+          [
+            _vm._m(1),
+            _vm._v(" "),
+            _vm.show_menu == true
+              ? _c("img", {
+                  staticClass: "menu",
+                  attrs: {
+                    src: "/images/close.png",
+                    width: "25",
+                    height: "25",
+                    alt: "logo"
+                  },
+                  on: {
+                    click: function($event) {
+                      _vm.show_menu = false
+                    }
+                  }
+                })
+              : _c("img", {
+                  staticClass: "menu",
+                  attrs: {
+                    src: "/images/menu.svg",
+                    width: "25",
+                    height: "25",
+                    alt: "logo"
+                  },
+                  on: {
+                    click: function($event) {
+                      _vm.show_menu = false
+                    }
+                  }
+                }),
+            _vm._v(" "),
+            _vm._m(2)
+          ]
+        )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "/" } }, [
+      _c("img", {
+        staticClass: "logo",
+        attrs: {
+          src: "/images/blacklogo.svg",
+          width: "60",
+          height: "60",
+          alt: "logo"
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "/" } }, [
+      _c("img", {
+        staticClass: "logo",
+        attrs: {
+          src: "/images/logo.svg",
+          width: "60",
+          height: "60",
+          alt: "logo"
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "d-flex align-items-center flex-column",
+        staticStyle: { height: "100vh" }
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "flex-grow-1 d-flex flex-column justify-content-center"
+          },
+          [
+            _c(
+              "a",
+              {
+                staticStyle: { "text-decoration": "none" },
+                attrs: { href: "/categorias" }
+              },
+              [
+                _c("h3", { staticClass: "text-menu text-center" }, [
+                  _vm._v("PORTAFOLIO")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "mt-2",
+                staticStyle: { "text-decoration": "none" },
+                attrs: { href: "/contacto" }
+              },
+              [
+                _c("h3", { staticClass: "text-menu text-center" }, [
+                  _vm._v("CONTACTO")
+                ])
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://www.facebook.com/arqmasuno/?ref=br_rs",
+                target: "_blank"
+              }
+            },
+            [
+              _c("img", {
+                staticClass: "ml-4 pointer",
+                attrs: {
+                  src: "/images/social/instagram-white.svg",
+                  alt: "instagram",
+                  width: "30px"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://www.instagram.com/arqmasuno/",
+                target: "_blank"
+              }
+            },
+            [
+              _c("img", {
+                staticClass: "mx-3 pointer",
+                attrs: {
+                  src: "/images/social/facebook-white.svg",
+                  alt: "facebook",
+                  width: "30px"
+                }
+              })
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mt-3 mb-5" }, [
+          _c("p", { staticClass: "text-menu-footer text-center" }, [
+            _vm._v("+52 (222) 543 5467")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "text-menu-footer text-center" }, [
+            _vm._v("hello@arqmasuno.mx")
+          ])
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-1433c45c", module.exports)
+  }
+}
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(92);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(4)("d714a89a", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3ece72b6\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./MyPage.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3ece72b6\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./MyPage.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.carousel-item[data-v-3ece72b6] {\n    height: 100vh;\n    min-height: 300px;\n    background: no-repeat center center scroll;\n    background-size: cover;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("div", { attrs: { id: "page" } }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _c("div", { staticClass: "content-page" }, [
+        _c(
+          "div",
+          {
+            staticClass: "carousel slide",
+            attrs: { id: "carouselExampleIndicators", "data-ride": "carousel" }
+          },
+          [
+            _vm._m(2),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "carousel-inner", attrs: { role: "listbox" } },
+              [
+                _c("div", { staticClass: "carousel-item active" }, [
+                  _c(
+                    "video",
+                    {
+                      staticClass: "video",
+                      attrs: {
+                        playsinline: "",
+                        autoplay: "",
+                        loop: "",
+                        muted: ""
+                      },
+                      domProps: { muted: true }
+                    },
+                    [
+                      _c("source", {
+                        attrs: {
+                          src: "/images/slider/video.mp4",
+                          type: "video/mp4"
+                        }
+                      })
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", {
+                  staticClass: "carousel-item",
+                  staticStyle: {
+                    "background-image": "url('/images/slider/1.jpg')"
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", {
+                  staticClass: "carousel-item",
+                  staticStyle: {
+                    "background-image": "url('/images/slider/2.jpg')"
+                  }
+                })
+              ]
+            )
+          ]
+        )
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "/" } }, [
+      _c("img", {
+        staticClass: "logo",
+        attrs: {
+          src: "/images/whitelogo.svg",
+          width: "60",
+          height: "60",
+          alt: "logo"
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "menu" }, [
+      _c("div", { staticClass: "row mr-5" }, [
+        _c("div", { staticClass: "col-md-5 col-sm-5 col-5" }, [
+          _c(
+            "a",
+            {
+              staticStyle: { "text-decoration": "none" },
+              attrs: { href: "/categorias" }
+            },
+            [_c("h3", { staticClass: "text-menu" }, [_vm._v("PORTAFOLIO")])]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-2 col-sm-2 col-2" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-5 col-sm-5 col-5" }, [
+          _c(
+            "a",
+            {
+              staticStyle: { "text-decoration": "none" },
+              attrs: { href: "/contacto" }
+            },
+            [_c("h3", { staticClass: "text-menu" }, [_vm._v("CONTACTO")])]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ol", { staticClass: "carousel-indicators" }, [
+      _c("li", {
+        staticClass: "active",
+        attrs: {
+          "data-target": "#carouselExampleIndicators",
+          "data-slide-to": "0"
+        }
+      }),
+      _vm._v(" "),
+      _c("li", {
+        attrs: {
+          "data-target": "#carouselExampleIndicators",
+          "data-slide-to": "1"
+        }
+      }),
+      _vm._v(" "),
+      _c("li", {
+        attrs: {
+          "data-target": "#carouselExampleIndicators",
+          "data-slide-to": "2"
+        }
+      })
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3ece72b6", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="page" v-if="show_menu == false">
+        <div v-if="show_menu == false">
             <a href="/"><img src="/images/blacklogo.svg" width="60" height="60" alt="logo" class="logo"></a>
             <i class="fas fa-bars menu" style="font-size: 28px; color: #848484" alt="logo" @click="show_menu = true"></i>
 
@@ -8,10 +8,9 @@
                 <categories-menu v-show="show_project_detail == false"></categories-menu>
                 
                 <categories v-show="show_project_detail == false" @loadProjectDetail="loadProjectDetail"></categories>
-            </div>
 
-            <project-detail v-show="show_project_detail == true" :project="project" @loadCategories="loadCategories"></project-detail>
-            
+                <project-detail v-show="show_project_detail == true" :project="project" @loadCategories="loadCategories"></project-detail>
+            </div>
         </div>
 
         <div style="background-color: #565656; height: 100vh;" id="menu" v-else class="pl-4">
