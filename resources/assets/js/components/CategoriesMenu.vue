@@ -9,11 +9,11 @@
             </div>
         </div>
         <div v-if="show_subcategories" class="d-flex justify-content-between mt-3 mb-1">
-            <p class="subcategories pointer" :class="{ active: category_selected == 1 }" @click="selectCategory(1)">comercial</p>
-            <p class="subcategories pointer" :class="{ active: category_selected == 2 }" @click="selectCategory(2)">interiorismo</p>
-            <p class="subcategories pointer" :class="{ active: category_selected == 3 }" @click="selectCategory(3)">paisajismo</p>
-            <p class="subcategories pointer" :class="{ active: category_selected == 4 }" @click="selectCategory(4)">residencial</p>
-            <p class="subcategories pointer" :class="{ active: category_selected == 5 }" @click="selectCategory(5)">v. vertical</p>
+            <p class="subcategories pointer" :class="{ active: category_selected == 0 }" @click="selectCategory(0)">comercial</p>
+            <p class="subcategories pointer" :class="{ active: category_selected == 1 }" @click="selectCategory(1)">interiorismo</p>
+            <p class="subcategories pointer" :class="{ active: category_selected == 2 }" @click="selectCategory(2)">paisajismo</p>
+            <p class="subcategories pointer" :class="{ active: category_selected == 3 }" @click="selectCategory(3)">residencial</p>
+            <p class="subcategories pointer" :class="{ active: category_selected == 4 }" @click="selectCategory(4)">v. vertical</p>
         </div>
     </div>
 </template>
@@ -23,7 +23,7 @@
         data() {
             return {
                 show_subcategories: false,
-                category_selected: 1
+                category_selected: 0
             }
         },
 

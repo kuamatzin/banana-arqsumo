@@ -11,19 +11,11 @@
     <div class="container">
       <div id="carouselExampleControls" class="carousel slide mt-4" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" v-for="(image, key) in project.images" :key="key" :data-slide-to="key" :class="{'active': key == 1}"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" :src="project">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" :src="url_images + '2.jpg'">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" :src="url_images + '3.jpg'">
+          <div v-for="(image, key) in project.images" :key="key" class="carousel-item" :class="{'active': key == 1}">
+            <img class="d-block w-100" :src="image">
           </div>
         </div>
         <a
@@ -48,19 +40,19 @@
     </div>
 
     <div class="container">
-      <h1 class="strong mt-5" style="color: #565656">DIAGONAL 28</h1>
+      <h1 class="strong mt-5" style="color: #565656">{{project.name}}</h1>
 
-      <p class="mt-4 details">PROYECTO EJECUTIVO</p>
+      <p class="mt-4 details">{{project.type}}</p>
 
-      <p class="details">TERRENO
-        <strong class="strong" style="color: #565656">461M</strong>
+      <p class="details" v-if="project.large_land">TERRENO
+        <strong class="strong" style="color: #565656">{{project.large_land}}</strong>
       </p>
-      <p class="details">CONSTRUCCIÓN
-        <strong class="strong" style="color: #565656">1,957M2</strong>
+      <p class="details" v-if="project.large_construction">CONSTRUCCIÓN
+        <strong class="strong" style="color: #565656">{{project.large_construction}}</strong>
       </p>
 
       <p class="details">UBICACIÓN DEL PROYECTO</p>
-      <p class="details strong mb-5" style="color: #565656">SAN PEDRO, CHOLULA</p>
+      <p class="details strong mb-5" style="color: #565656">{{project.location}}</p>
     </div>
   </div>
 </template>
