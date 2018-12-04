@@ -49802,7 +49802,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "menu" }, [
-      _c("div", { staticClass: "row mr-5" }, [
+      _c("div", { staticClass: "row mr-5 mt-3" }, [
         _c("div", { staticClass: "col-md-5 col-sm-5 col-5" }, [
           _c(
             "a",
@@ -50768,7 +50768,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "menu" }, [
-      _c("div", { staticClass: "row mr-2" }, [
+      _c("div", { staticClass: "row mr-2 mt-3" }, [
         _c("div", { staticClass: "col-md-5" }, [
           _c(
             "a",
@@ -51441,7 +51441,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.info[data-v-ef837c16] {\n    margin: 0;\n    padding: 0;\n    font-size: 1.4rem;\n}\n", ""]);
+exports.push([module.i, "\n.info[data-v-ef837c16] {\n    margin: 0;\n    padding: 0;\n    font-size: 1.1rem;\n}\n", ""]);
 
 // exports
 
@@ -51585,7 +51585,7 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "menu" }, [
-          _c("div", { staticClass: "row mr-2" }, [
+          _c("div", { staticClass: "row mr-2 mt-3" }, [
             _c("div", { staticClass: "col-md-5" }, [
               _c(
                 "a",

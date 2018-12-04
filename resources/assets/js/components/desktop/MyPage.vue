@@ -3,7 +3,7 @@
         <div id="page">
             <a href="/"><img src="/images/whitelogo.svg" width="60" height="60" alt="logo" class="logo"></a>
             <div class="menu">
-                <div class="row mr-5">
+                <div class="row mr-5 mt-3">
                     <div class="col-md-5 col-sm-5 col-5">
                         <a href="/categorias" style="text-decoration:none">
                             <h3 class="text-menu">PORTAFOLIO</h3>
