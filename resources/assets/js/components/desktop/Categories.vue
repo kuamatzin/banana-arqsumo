@@ -1,9 +1,9 @@
 <template>
     <div class="row mb-5" v-if="active_project != 100">
-        <div id="images" class="col-md-4 animated flipInX" v-for="project in projects[active_project]">
+        <div id="images" class="col-md-4 animated flipInX" v-for="project in projects[active_project]" @click="projectDetail(project)">
             <div class="project-detail">
-                <img :src="project.main_image" class="image pointer img-fluid mt-4" @click="projectDetail(project)">
-                <div class="middle">
+                <img :src="project.main_image" class="image pointer img-fluid mt-4">
+                <div class="middle pointer">
                     <div class="text strong">{{project.name}}</div>
                 </div>
             </div>

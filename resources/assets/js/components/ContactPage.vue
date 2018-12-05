@@ -80,8 +80,8 @@
 
 
                 <div class="mt-3 mb-5">
-                    <p class="text-menu-footer text-center">+52 (222) 543 5467</p>
-                    <p class="text-menu-footer text-center">hello@arqmasuno.mx</p>
+                    <p class="text-menu-footer text-center">+52 (222) 583 0181</p>
+                    <p class="text-menu-footer text-center">contacto@arqmasuno.mx</p>
                 </div>
             </div>
         </div>

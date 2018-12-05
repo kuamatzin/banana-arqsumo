@@ -88,6 +88,7 @@ export default {
 }
 
 .return:hover {
+  font-size: 1.1rem;
   font-family: 'Helvetica Neue LT Std';
   color: #282e41;
 }
@@ -98,8 +99,8 @@ export default {
   padding: 0;
 }
 
-.carousel .item img {
-  max-height: 768px;
+.carousel-item img {
+  max-height: 624px;
   min-width: auto;
 }
 </style>

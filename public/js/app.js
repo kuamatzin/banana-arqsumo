@@ -48617,21 +48617,21 @@ var render = function() {
             "div",
             {
               staticClass: "col-md-4 animated flipInX",
-              attrs: { id: "images" }
+              attrs: { id: "images" },
+              on: {
+                click: function($event) {
+                  _vm.projectDetail(project)
+                }
+              }
             },
             [
               _c("div", { staticClass: "project-detail" }, [
                 _c("img", {
                   staticClass: "image pointer img-fluid mt-4",
-                  attrs: { src: project.main_image },
-                  on: {
-                    click: function($event) {
-                      _vm.projectDetail(project)
-                    }
-                  }
+                  attrs: { src: project.main_image }
                 }),
                 _vm._v(" "),
-                _c("div", { staticClass: "middle" }, [
+                _c("div", { staticClass: "middle pointer" }, [
                   _c("div", { staticClass: "text strong" }, [
                     _vm._v(_vm._s(project.name))
                   ])
@@ -49129,21 +49129,21 @@ var render = function() {
             "div",
             {
               staticClass: "col-md-4 animated flipInX",
-              attrs: { id: "images" }
+              attrs: { id: "images" },
+              on: {
+                click: function($event) {
+                  _vm.projectDetail(project)
+                }
+              }
             },
             [
               _c("div", { staticClass: "project-detail" }, [
                 _c("img", {
                   staticClass: "image pointer img-fluid mt-4",
-                  attrs: { src: project.main_image },
-                  on: {
-                    click: function($event) {
-                      _vm.projectDetail(project)
-                    }
-                  }
+                  attrs: { src: project.main_image }
                 }),
                 _vm._v(" "),
-                _c("div", { staticClass: "middle" }, [
+                _c("div", { staticClass: "middle pointer" }, [
                   _c("div", { staticClass: "text strong" }, [
                     _vm._v(_vm._s(project.name))
                   ])
@@ -50062,7 +50062,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.return[data-v-90aec9ba] {\n  font-size: 1.2rem;\n}\n.return[data-v-90aec9ba]:hover {\n  font-family: 'Helvetica Neue LT Std';\n  color: #282e41;\n}\n.details[data-v-90aec9ba] {\n  font-size: 1.2rem;\n  margin: 0;\n  padding: 0;\n}\n.carousel .item img[data-v-90aec9ba] {\n  max-height: 768px;\n  min-width: auto;\n}\n", ""]);
+exports.push([module.i, "\n.return[data-v-90aec9ba] {\n  font-size: 1.2rem;\n}\n.return[data-v-90aec9ba]:hover {\n  font-size: 1.1rem;\n  font-family: 'Helvetica Neue LT Std';\n  color: #282e41;\n}\n.details[data-v-90aec9ba] {\n  font-size: 1.2rem;\n  margin: 0;\n  padding: 0;\n}\n.carousel-item img[data-v-90aec9ba] {\n  max-height: 624px;\n  min-width: auto;\n}\n", ""]);
 
 // exports
 
@@ -51370,11 +51370,11 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("div", { staticClass: "mt-3 mb-5" }, [
           _c("p", { staticClass: "text-menu-footer text-center" }, [
-            _vm._v("+52 (222) 543 5467")
+            _vm._v("+52 (222) 583 0181")
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "text-menu-footer text-center" }, [
-            _vm._v("hello@arqmasuno.mx")
+            _vm._v("contacto@arqmasuno.mx")
           ])
         ])
       ]
@@ -51818,11 +51818,11 @@ var staticRenderFns = [
                       ),
                       _vm._v(" "),
                       _c("p", { staticClass: "text-center info strong" }, [
-                        _c("strong", [_vm._v("Tel: +52 (222) 543 5467")])
+                        _c("strong", [_vm._v("Tel: +52 (222) 583 0181")])
                       ]),
                       _vm._v(" "),
                       _c("p", { staticClass: "text-center info strong" }, [
-                        _c("strong", [_vm._v("Email: hello@arqmasuno.mx")])
+                        _c("strong", [_vm._v("Email: contacto@arqmasuno.mx")])
                       ]),
                       _vm._v(" "),
                       _c("p", { staticClass: "text-center info mt-4" }, [
