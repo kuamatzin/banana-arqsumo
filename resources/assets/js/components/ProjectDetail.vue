@@ -3,7 +3,7 @@
     <br>
     <div class="container">
       <div class="d-flex align-items-end mt-5 pointer" @click="backToCategories">
-        <i class="fas fa-arrow-left mb-3 return"></i>
+        <i class="fas fa-arrow-left mb-3 return-icon"></i>
         <h4 class="ml-2 return">regresar al portafolio</h4>
       </div>
     </div>
@@ -52,7 +52,8 @@
       </p>
 
       <p class="details">UBICACIÓN DEL PROYECTO</p>
-      <p class="details strong mb-5" style="color: #565656">{{project.location}}</p>
+      <p class="details strong" style="color: #565656">{{project.location}}</p>
+      <p class="details strong mb-5" style="color: #565656">{{project.year}}</p>
     </div>
   </div>
 </template>
@@ -82,7 +83,12 @@ export default {
 </script>
 
 <style scoped="">
+.return {
+  font-size: 1.2rem;
+}
+
 .return:hover {
+  font-family: 'Helvetica Neue LT Std';
   color: #282e41;
 }
 

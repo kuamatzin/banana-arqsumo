@@ -52,8 +52,7 @@
                             images: [
                                 '/images/categorias/comercial/La Burguesa/1.jpg',
                                 '/images/categorias/comercial/La Burguesa/2.jpg',
-                                '/images/categorias/comercial/La Burguesa/3.jpg',
-                                '/images/categorias/comercial/La Burguesa/4.jpg',
+                                '/images/categorias/comercial/La Burguesa/3.jpg'
                             ]
                         },
                         {
@@ -228,7 +227,7 @@
                         {
                             name: 'ADRIÁTICO 63',
                             type: 'PROYECTO + REMODELACIÓN + INTERVENCIÓN EN FACHADA',
-                            location: 'SAN ANDR…S, CHOLULA',
+                            location: 'SAN ANDRÉS, CHOLULA',
                             large_land: '',
                             large_construction: '',
                             year: '2013',
@@ -289,8 +288,8 @@
                             ]
                         },
                         {
-                            name: 'CARCA—A 53',
-                            type: 'PROYECTO + EJECUCI”N DE OBRA',
+                            name: 'CARCAÑA 53',
+                            type: 'PROYECTO + EJECUCIÓN DE OBRA',
                             location: 'SAN PEDRO, CHOLULA',
                             large_land: '160M2',
                             large_construction: '197M2',
@@ -305,7 +304,7 @@
                             ]
                         },
                         {
-                            name: 'CASA CORT¡ZAR',
+                            name: 'CASA CORTÁZAR',
                             type: 'PROYECTO REMODELACIÓN',
                             location: 'SAN PEDRO, CHOLULA',
                             large_land: '',
@@ -320,7 +319,7 @@
                             ]
                         },
                         {
-                            name: 'CASA QUER…TARO 35',
+                            name: 'CASA QUERÉTARO 35',
                             type: 'PROYECTO EJECUTIVO',
                             location: 'PUEBLA, PUEBLA',
                             large_land: '170.12M2',
@@ -338,7 +337,7 @@
                         },
                         {
                             name: 'CASA RZ',
-                            type: 'PROYECTO + EJECUCI”N DE OBRA',
+                            type: 'PROYECTO + EJECUCIÓN DE OBRA',
                             location: 'YAUHQUEMECAN, TLAXCALA',
                             large_land: '392M2',
                             large_construction: '275M2',
@@ -367,7 +366,7 @@
                         },
                         {
                             name: 'EL SABINAL',
-                            type: 'PROYECTO EJECUTIVO + EJECUCI”N DE OBRA',
+                            type: 'PROYECTO EJECUTIVO + EJECUCIÓN DE OBRA',
                             location: 'APIZACO, TLAXCALA',
                             large_land: '620M2',
                             large_construction: '307M2',
@@ -382,7 +381,7 @@
                         },
                         {
                             name: 'HACIENDA ZACATELCO',
-                            type: 'PROYECTO + EJECUCI”N DE OBRA',
+                            type: 'PROYECTO + EJECUCIÓN DE OBRA',
                             location: 'ZACATELCO, TLAXCALA',
                             large_land: '1620M2',
                             large_construction: '207M2',
@@ -399,7 +398,7 @@
                         {
                             name: 'NAVOJOA',
                             type: 'PROYECTO EJECUTIVO',
-                            location: 'SAN ANDR…S, CHOLULA',
+                            location: 'SAN ANDRÉS, CHOLULA',
                             large_land: '160M2',
                             large_construction: '286M2',
                             year: '2017',
@@ -414,7 +413,7 @@
                         {
                             name: 'PALENQUE',
                             type: 'PROYECTO EJECUTIVO',
-                            location: 'SAN ANDR…S, CHOLULA',
+                            location: 'SAN ANDRÉS, CHOLULA',
                             large_land: '202M2',
                             large_construction: '256M2',
                             year: '2017',
@@ -428,7 +427,7 @@
                         },
                         {
                             name: 'SABINOS 2',
-                            type: 'PROYECTO + EJECUCI”N DE OBRA',
+                            type: 'PROYECTO + EJECUCIÓN DE OBRA',
                             location: 'AMOZOC, PUEBLA',
                             large_land: '780M2',
                             large_construction: '270M2',
@@ -501,7 +500,7 @@
                         },
                         {
                             name: 'HUEXO 45',
-                            type: 'PROYECTO + MODELO DE INVERSI”N',
+                            type: 'PROYECTO + MODELO DE INVERSIÓN',
                             location: 'PUEBLA, PUEBLA',
                             large_land: '700M2',
                             large_construction: '7,480M2',
@@ -516,7 +515,7 @@
                         },
                         {
                             name: 'MOMOXPAN 2405',
-                            type: 'PROYECTO EJECUTIVO + MODELO DE INVERSI”N +EJECUCI”N DE OBRA',
+                            type: 'PROYECTO EJECUTIVO + MODELO DE INVERSIÓN +EJECUCIÓN DE OBRA',
                             location: 'SAN PEDRO, CHOLULA',
                             large_land: '349M2',
                             large_construction: '1,277M2',
@@ -546,8 +545,8 @@
                             ]
                         },
                         {
-                            name: 'TEZIUTL¡N 53',
-                            type: 'PROYECTO + MODELO DE INVERSI”N',
+                            name: 'TEZIUTLÁN 53',
+                            type: 'PROYECTO + MODELO DE INVERSIÓN',
                             location: 'PUEBLA, PUEBLA',
                             large_land: '606M2',
                             large_construction: '5,230M2',
@@ -562,7 +561,7 @@
                         },
                         {
                             name: 'TORRE SAN MARTINITO',
-                            type: 'PROYECTO + MODELO DE INVERSI”N',
+                            type: 'PROYECTO + MODELO DE INVERSIÓN',
                             location: 'SAN PEDRO, CHOLULA',
                             large_land: '1,235M2',
                             large_construction: '3,233M2',
@@ -607,11 +606,12 @@
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  text-transform: uppercase;
 }
 
 .project-detail:hover .image {

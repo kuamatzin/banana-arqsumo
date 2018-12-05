@@ -47823,7 +47823,7 @@ var render = function() {
     ]),
     _vm._v(" "),
     _vm.show_subcategories
-      ? _c("div", { staticClass: "d-flex justify-content-between mt-3 mb-1" }, [
+      ? _c("div", { staticClass: "d-flex justify-content-between mb-1" }, [
           _c(
             "p",
             {
@@ -48056,7 +48056,7 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-md-6 offset-md-6" }, [
-        _c("div", { staticClass: "d-flex justify-content-between mt-3 mb-1" }, [
+        _c("div", { staticClass: "d-flex justify-content-between mb-1" }, [
           _c(
             "p",
             {
@@ -48283,7 +48283,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 large_construction: '50M2',
                 year: '2017',
                 main_image: '/images/categorias/comercial/La Burguesa/1.jpg',
-                images: ['/images/categorias/comercial/La Burguesa/1.jpg', '/images/categorias/comercial/La Burguesa/2.jpg', '/images/categorias/comercial/La Burguesa/3.jpg', '/images/categorias/comercial/La Burguesa/4.jpg']
+                images: ['/images/categorias/comercial/La Burguesa/1.jpg', '/images/categorias/comercial/La Burguesa/2.jpg', '/images/categorias/comercial/La Burguesa/3.jpg']
             }, {
                 name: 'La Estrella',
                 type: 'PROYECTO + EJECUCIÓN DE OBRA',
@@ -48386,7 +48386,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }], [{
                 name: 'ADRIÁTICO 63',
                 type: 'PROYECTO + REMODELACIÓN + INTERVENCIÓN EN FACHADA',
-                location: 'SAN ANDR…S, CHOLULA',
+                location: 'SAN ANDRÉS, CHOLULA',
                 large_land: '',
                 large_construction: '',
                 year: '2013',
@@ -48420,8 +48420,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 main_image: '/images/categorias/residencial/Antigua Cementera/1.jpg',
                 images: ['/images/categorias/residencial/Antigua Cementera/1.jpg', '/images/categorias/residencial/Antigua Cementera/2.jpg', '/images/categorias/residencial/Antigua Cementera/3.jpg', '/images/categorias/residencial/Antigua Cementera/4.jpg', '/images/categorias/residencial/Antigua Cementera/5.jpg']
             }, {
-                name: 'CARCA—A 53',
-                type: 'PROYECTO + EJECUCI”N DE OBRA',
+                name: 'CARCAÑA 53',
+                type: 'PROYECTO + EJECUCIÓN DE OBRA',
                 location: 'SAN PEDRO, CHOLULA',
                 large_land: '160M2',
                 large_construction: '197M2',
@@ -48429,7 +48429,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 main_image: '/images/categorias/residencial/Casa Carcaña 53/1.jpg',
                 images: ['/images/categorias/residencial/Casa Carcaña 53/1.jpg', '/images/categorias/residencial/Casa Carcaña 53/2.jpg', '/images/categorias/residencial/Casa Carcaña 53/3.jpg', '/images/categorias/residencial/Casa Carcaña 53/4.jpg', '/images/categorias/residencial/Casa Carcaña 53/5.jpg']
             }, {
-                name: 'CASA CORT¡ZAR',
+                name: 'CASA CORTÁZAR',
                 type: 'PROYECTO REMODELACIÓN',
                 location: 'SAN PEDRO, CHOLULA',
                 large_land: '',
@@ -48438,7 +48438,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 main_image: '/images/categorias/residencial/Casa Cortázar/1.jpg',
                 images: ['/images/categorias/residencial/Casa Cortázar/1.jpg', '/images/categorias/residencial/Casa Cortázar/2.jpg', '/images/categorias/residencial/Casa Cortázar/3.jpg', '/images/categorias/residencial/Casa Cortázar/4.jpg']
             }, {
-                name: 'CASA QUER…TARO 35',
+                name: 'CASA QUERÉTARO 35',
                 type: 'PROYECTO EJECUTIVO',
                 location: 'PUEBLA, PUEBLA',
                 large_land: '170.12M2',
@@ -48448,7 +48448,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 images: ['/images/categorias/residencial/Casa Querétaro 35/1.jpg', '/images/categorias/residencial/Casa Querétaro 35/2.jpg', '/images/categorias/residencial/Casa Querétaro 35/3.jpg', '/images/categorias/residencial/Casa Querétaro 35/4.jpg', '/images/categorias/residencial/Casa Querétaro 35/5.jpg', '/images/categorias/residencial/Casa Querétaro 35/6.jpg']
             }, {
                 name: 'CASA RZ',
-                type: 'PROYECTO + EJECUCI”N DE OBRA',
+                type: 'PROYECTO + EJECUCIÓN DE OBRA',
                 location: 'YAUHQUEMECAN, TLAXCALA',
                 large_land: '392M2',
                 large_construction: '275M2',
@@ -48466,7 +48466,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 images: ['/images/categorias/residencial/Casa Sana Anita/1.jpg', '/images/categorias/residencial/Casa Sana Anita/2.jpg']
             }, {
                 name: 'EL SABINAL',
-                type: 'PROYECTO EJECUTIVO + EJECUCI”N DE OBRA',
+                type: 'PROYECTO EJECUTIVO + EJECUCIÓN DE OBRA',
                 location: 'APIZACO, TLAXCALA',
                 large_land: '620M2',
                 large_construction: '307M2',
@@ -48475,7 +48475,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 images: ['/images/categorias/residencial/El Sabinal/1.jpg', '/images/categorias/residencial/El Sabinal/2.jpg', '/images/categorias/residencial/El Sabinal/3.jpg', '/images/categorias/residencial/El Sabinal/4.jpg']
             }, {
                 name: 'HACIENDA ZACATELCO',
-                type: 'PROYECTO + EJECUCI”N DE OBRA',
+                type: 'PROYECTO + EJECUCIÓN DE OBRA',
                 location: 'ZACATELCO, TLAXCALA',
                 large_land: '1620M2',
                 large_construction: '207M2',
@@ -48485,7 +48485,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 name: 'NAVOJOA',
                 type: 'PROYECTO EJECUTIVO',
-                location: 'SAN ANDR…S, CHOLULA',
+                location: 'SAN ANDRÉS, CHOLULA',
                 large_land: '160M2',
                 large_construction: '286M2',
                 year: '2017',
@@ -48494,7 +48494,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 name: 'PALENQUE',
                 type: 'PROYECTO EJECUTIVO',
-                location: 'SAN ANDR…S, CHOLULA',
+                location: 'SAN ANDRÉS, CHOLULA',
                 large_land: '202M2',
                 large_construction: '256M2',
                 year: '2017',
@@ -48502,7 +48502,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 images: ['/images/categorias/residencial/Palenque/1.jpg', '/images/categorias/residencial/Palenque/2.jpg', '/images/categorias/residencial/Palenque/3.jpg', '/images/categorias/residencial/Palenque/4.jpg']
             }, {
                 name: 'SABINOS 2',
-                type: 'PROYECTO + EJECUCI”N DE OBRA',
+                type: 'PROYECTO + EJECUCIÓN DE OBRA',
                 location: 'AMOZOC, PUEBLA',
                 large_land: '780M2',
                 large_construction: '270M2',
@@ -48538,7 +48538,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 images: ['/images/categorias/vertical/Diagonal 28/1.jpg', '/images/categorias/vertical/Diagonal 28/2.jpg', '/images/categorias/vertical/Diagonal 28/3.jpg', '/images/categorias/vertical/Diagonal 28/4.jpg', '/images/categorias/vertical/Diagonal 28/5.jpg', '/images/categorias/vertical/Diagonal 28/6.jpg', '/images/categorias/vertical/Diagonal 28/7.jpg', '/images/categorias/vertical/Diagonal 28/8.jpg', '/images/categorias/vertical/Diagonal 28/9.jpg', '/images/categorias/vertical/Diagonal 28/10.jpg']
             }, {
                 name: 'HUEXO 45',
-                type: 'PROYECTO + MODELO DE INVERSI”N',
+                type: 'PROYECTO + MODELO DE INVERSIÓN',
                 location: 'PUEBLA, PUEBLA',
                 large_land: '700M2',
                 large_construction: '7,480M2',
@@ -48547,7 +48547,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 images: ['/images/categorias/vertical/Huexo 45/1.jpg', '/images/categorias/vertical/Huexo 45/2.jpg', '/images/categorias/vertical/Huexo 45/3.jpg']
             }, {
                 name: 'MOMOXPAN 2405',
-                type: 'PROYECTO EJECUTIVO + MODELO DE INVERSI”N +EJECUCI”N DE OBRA',
+                type: 'PROYECTO EJECUTIVO + MODELO DE INVERSIÓN +EJECUCIÓN DE OBRA',
                 location: 'SAN PEDRO, CHOLULA',
                 large_land: '349M2',
                 large_construction: '1,277M2',
@@ -48564,8 +48564,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 main_image: '/images/categorias/vertical/Sur 18 Agua Santa/1.jpg',
                 images: ['/images/categorias/vertical/Sur 18 Agua Santa/1.jpg', '/images/categorias/vertical/Sur 18 Agua Santa/2.jpg', '/images/categorias/vertical/Sur 18 Agua Santa/3.jpg', '/images/categorias/vertical/Sur 18 Agua Santa/4.jpg']
             }, {
-                name: 'TEZIUTL¡N 53',
-                type: 'PROYECTO + MODELO DE INVERSI”N',
+                name: 'TEZIUTLÁN 53',
+                type: 'PROYECTO + MODELO DE INVERSIÓN',
                 location: 'PUEBLA, PUEBLA',
                 large_land: '606M2',
                 large_construction: '5,230M2',
@@ -48574,7 +48574,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 images: ['/images/categorias/vertical/Teziutlán 53/1.jpg', '/images/categorias/vertical/Teziutlán 53/2.jpg', '/images/categorias/vertical/Teziutlán 53/3.jpg']
             }, {
                 name: 'TORRE SAN MARTINITO',
-                type: 'PROYECTO + MODELO DE INVERSI”N',
+                type: 'PROYECTO + MODELO DE INVERSIÓN',
                 location: 'SAN PEDRO, CHOLULA',
                 large_land: '1,235M2',
                 large_construction: '3,233M2',
@@ -48725,7 +48725,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.project-detail[data-v-d45fa634] {\n    background-color: black;\n}\n.image[data-v-d45fa634] {\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  -webkit-transition: .5s ease;\n  transition: .5s ease;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n}\n.middle[data-v-d45fa634] {\n  -webkit-transition: .5s ease;\n  transition: .5s ease;\n  opacity: 0;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  text-align: center;\n}\n.project-detail:hover .image[data-v-d45fa634] {\n  opacity: 0.4;\n}\n.project-detail:hover .middle[data-v-d45fa634] {\n  opacity: 1;\n}\n.text[data-v-d45fa634] {\n  color: white;\n  font-weight: bold;\n  font-size: 20px;\n  padding: 16px 32px;\n}\n", ""]);
+exports.push([module.i, "\n.project-detail[data-v-d45fa634] {\n    background-color: black;\n}\n.image[data-v-d45fa634] {\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  -webkit-transition: .5s ease;\n  transition: .5s ease;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n}\n.middle[data-v-d45fa634] {\n  -webkit-transition: .5s ease;\n  transition: .5s ease;\n  opacity: 0;\n  position: absolute;\n  top: 55%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  text-align: center;\n  text-transform: uppercase;\n}\n.project-detail:hover .image[data-v-d45fa634] {\n  opacity: 0.4;\n}\n.project-detail:hover .middle[data-v-d45fa634] {\n  opacity: 1;\n}\n.text[data-v-d45fa634] {\n  color: white;\n  font-weight: bold;\n  font-size: 20px;\n  padding: 16px 32px;\n}\n", ""]);
 
 // exports
 
@@ -48781,7 +48781,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 large_construction: '50M2',
                 year: '2017',
                 main_image: '/images/categorias/comercial/La Burguesa/1.jpg',
-                images: ['/images/categorias/comercial/La Burguesa/1.jpg', '/images/categorias/comercial/La Burguesa/2.jpg', '/images/categorias/comercial/La Burguesa/3.jpg', '/images/categorias/comercial/La Burguesa/4.jpg']
+                images: ['/images/categorias/comercial/La Burguesa/1.jpg', '/images/categorias/comercial/La Burguesa/2.jpg', '/images/categorias/comercial/La Burguesa/3.jpg']
             }, {
                 name: 'La Estrella',
                 type: 'PROYECTO + EJECUCIÓN DE OBRA',
@@ -48884,7 +48884,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }], [{
                 name: 'ADRIÁTICO 63',
                 type: 'PROYECTO + REMODELACIÓN + INTERVENCIÓN EN FACHADA',
-                location: 'SAN ANDR…S, CHOLULA',
+                location: 'SAN ANDRÉS, CHOLULA',
                 large_land: '',
                 large_construction: '',
                 year: '2013',
@@ -48918,8 +48918,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 main_image: '/images/categorias/residencial/Antigua Cementera/1.jpg',
                 images: ['/images/categorias/residencial/Antigua Cementera/1.jpg', '/images/categorias/residencial/Antigua Cementera/2.jpg', '/images/categorias/residencial/Antigua Cementera/3.jpg', '/images/categorias/residencial/Antigua Cementera/4.jpg', '/images/categorias/residencial/Antigua Cementera/5.jpg']
             }, {
-                name: 'CARCA—A 53',
-                type: 'PROYECTO + EJECUCI”N DE OBRA',
+                name: 'CARCAÑA 53',
+                type: 'PROYECTO + EJECUCIÓN DE OBRA',
                 location: 'SAN PEDRO, CHOLULA',
                 large_land: '160M2',
                 large_construction: '197M2',
@@ -48927,7 +48927,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 main_image: '/images/categorias/residencial/Casa Carcaña 53/1.jpg',
                 images: ['/images/categorias/residencial/Casa Carcaña 53/1.jpg', '/images/categorias/residencial/Casa Carcaña 53/2.jpg', '/images/categorias/residencial/Casa Carcaña 53/3.jpg', '/images/categorias/residencial/Casa Carcaña 53/4.jpg', '/images/categorias/residencial/Casa Carcaña 53/5.jpg']
             }, {
-                name: 'CASA CORT¡ZAR',
+                name: 'CASA CORTÁZAR',
                 type: 'PROYECTO REMODELACIÓN',
                 location: 'SAN PEDRO, CHOLULA',
                 large_land: '',
@@ -48936,7 +48936,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 main_image: '/images/categorias/residencial/Casa Cortázar/1.jpg',
                 images: ['/images/categorias/residencial/Casa Cortázar/1.jpg', '/images/categorias/residencial/Casa Cortázar/2.jpg', '/images/categorias/residencial/Casa Cortázar/3.jpg', '/images/categorias/residencial/Casa Cortázar/4.jpg']
             }, {
-                name: 'CASA QUER…TARO 35',
+                name: 'CASA QUERÉTARO 35',
                 type: 'PROYECTO EJECUTIVO',
                 location: 'PUEBLA, PUEBLA',
                 large_land: '170.12M2',
@@ -48946,7 +48946,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 images: ['/images/categorias/residencial/Casa Querétaro 35/1.jpg', '/images/categorias/residencial/Casa Querétaro 35/2.jpg', '/images/categorias/residencial/Casa Querétaro 35/3.jpg', '/images/categorias/residencial/Casa Querétaro 35/4.jpg', '/images/categorias/residencial/Casa Querétaro 35/5.jpg', '/images/categorias/residencial/Casa Querétaro 35/6.jpg']
             }, {
                 name: 'CASA RZ',
-                type: 'PROYECTO + EJECUCI”N DE OBRA',
+                type: 'PROYECTO + EJECUCIÓN DE OBRA',
                 location: 'YAUHQUEMECAN, TLAXCALA',
                 large_land: '392M2',
                 large_construction: '275M2',
@@ -48964,7 +48964,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 images: ['/images/categorias/residencial/Casa Sana Anita/1.jpg', '/images/categorias/residencial/Casa Sana Anita/2.jpg']
             }, {
                 name: 'EL SABINAL',
-                type: 'PROYECTO EJECUTIVO + EJECUCI”N DE OBRA',
+                type: 'PROYECTO EJECUTIVO + EJECUCIÓN DE OBRA',
                 location: 'APIZACO, TLAXCALA',
                 large_land: '620M2',
                 large_construction: '307M2',
@@ -48973,7 +48973,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 images: ['/images/categorias/residencial/El Sabinal/1.jpg', '/images/categorias/residencial/El Sabinal/2.jpg', '/images/categorias/residencial/El Sabinal/3.jpg', '/images/categorias/residencial/El Sabinal/4.jpg']
             }, {
                 name: 'HACIENDA ZACATELCO',
-                type: 'PROYECTO + EJECUCI”N DE OBRA',
+                type: 'PROYECTO + EJECUCIÓN DE OBRA',
                 location: 'ZACATELCO, TLAXCALA',
                 large_land: '1620M2',
                 large_construction: '207M2',
@@ -48983,7 +48983,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 name: 'NAVOJOA',
                 type: 'PROYECTO EJECUTIVO',
-                location: 'SAN ANDR…S, CHOLULA',
+                location: 'SAN ANDRÉS, CHOLULA',
                 large_land: '160M2',
                 large_construction: '286M2',
                 year: '2017',
@@ -48992,7 +48992,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 name: 'PALENQUE',
                 type: 'PROYECTO EJECUTIVO',
-                location: 'SAN ANDR…S, CHOLULA',
+                location: 'SAN ANDRÉS, CHOLULA',
                 large_land: '202M2',
                 large_construction: '256M2',
                 year: '2017',
@@ -49000,7 +49000,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 images: ['/images/categorias/residencial/Palenque/1.jpg', '/images/categorias/residencial/Palenque/2.jpg', '/images/categorias/residencial/Palenque/3.jpg', '/images/categorias/residencial/Palenque/4.jpg']
             }, {
                 name: 'SABINOS 2',
-                type: 'PROYECTO + EJECUCI”N DE OBRA',
+                type: 'PROYECTO + EJECUCIÓN DE OBRA',
                 location: 'AMOZOC, PUEBLA',
                 large_land: '780M2',
                 large_construction: '270M2',
@@ -49036,7 +49036,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 images: ['/images/categorias/vertical/Diagonal 28/1.jpg', '/images/categorias/vertical/Diagonal 28/2.jpg', '/images/categorias/vertical/Diagonal 28/3.jpg', '/images/categorias/vertical/Diagonal 28/4.jpg', '/images/categorias/vertical/Diagonal 28/5.jpg', '/images/categorias/vertical/Diagonal 28/6.jpg', '/images/categorias/vertical/Diagonal 28/7.jpg', '/images/categorias/vertical/Diagonal 28/8.jpg', '/images/categorias/vertical/Diagonal 28/9.jpg', '/images/categorias/vertical/Diagonal 28/10.jpg']
             }, {
                 name: 'HUEXO 45',
-                type: 'PROYECTO + MODELO DE INVERSI”N',
+                type: 'PROYECTO + MODELO DE INVERSIÓN',
                 location: 'PUEBLA, PUEBLA',
                 large_land: '700M2',
                 large_construction: '7,480M2',
@@ -49045,7 +49045,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 images: ['/images/categorias/vertical/Huexo 45/1.jpg', '/images/categorias/vertical/Huexo 45/2.jpg', '/images/categorias/vertical/Huexo 45/3.jpg']
             }, {
                 name: 'MOMOXPAN 2405',
-                type: 'PROYECTO EJECUTIVO + MODELO DE INVERSI”N +EJECUCI”N DE OBRA',
+                type: 'PROYECTO EJECUTIVO + MODELO DE INVERSIÓN +EJECUCIÓN DE OBRA',
                 location: 'SAN PEDRO, CHOLULA',
                 large_land: '349M2',
                 large_construction: '1,277M2',
@@ -49062,8 +49062,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 main_image: '/images/categorias/vertical/Sur 18 Agua Santa/1.jpg',
                 images: ['/images/categorias/vertical/Sur 18 Agua Santa/1.jpg', '/images/categorias/vertical/Sur 18 Agua Santa/2.jpg', '/images/categorias/vertical/Sur 18 Agua Santa/3.jpg', '/images/categorias/vertical/Sur 18 Agua Santa/4.jpg']
             }, {
-                name: 'TEZIUTL¡N 53',
-                type: 'PROYECTO + MODELO DE INVERSI”N',
+                name: 'TEZIUTLÁN 53',
+                type: 'PROYECTO + MODELO DE INVERSIÓN',
                 location: 'PUEBLA, PUEBLA',
                 large_land: '606M2',
                 large_construction: '5,230M2',
@@ -49072,7 +49072,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 images: ['/images/categorias/vertical/Teziutlán 53/1.jpg', '/images/categorias/vertical/Teziutlán 53/2.jpg', '/images/categorias/vertical/Teziutlán 53/3.jpg']
             }, {
                 name: 'TORRE SAN MARTINITO',
-                type: 'PROYECTO + MODELO DE INVERSI”N',
+                type: 'PROYECTO + MODELO DE INVERSIÓN',
                 location: 'SAN PEDRO, CHOLULA',
                 large_land: '1,235M2',
                 large_construction: '3,233M2',
@@ -50034,7 +50034,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.return[data-v-90aec9ba]:hover {\n  color: #282e41;\n}\n.details[data-v-90aec9ba] {\n  font-size: 1.2rem;\n  margin: 0;\n  padding: 0;\n}\n.carousel .item img[data-v-90aec9ba] {\n  max-height: 768px;\n  min-width: auto;\n}\n", ""]);
+exports.push([module.i, "\n.return[data-v-90aec9ba] {\n  font-size: 1.2rem;\n}\n.return[data-v-90aec9ba]:hover {\n  font-family: 'Helvetica Neue LT Std';\n  color: #282e41;\n}\n.details[data-v-90aec9ba] {\n  font-size: 1.2rem;\n  margin: 0;\n  padding: 0;\n}\n.carousel .item img[data-v-90aec9ba] {\n  max-height: 768px;\n  min-width: auto;\n}\n", ""]);
 
 // exports
 
@@ -50045,6 +50045,7 @@ exports.push([module.i, "\n.return[data-v-90aec9ba]:hover {\n  color: #282e41;\n
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -50147,7 +50148,7 @@ var render = function() {
           on: { click: _vm.backToCategories }
         },
         [
-          _c("i", { staticClass: "fas fa-arrow-left mb-3 return" }),
+          _c("i", { staticClass: "fas fa-arrow-left mb-3 return-icon" }),
           _vm._v(" "),
           _c("h4", { staticClass: "ml-2 return" }, [
             _vm._v("regresar al portafolio")
@@ -50244,11 +50245,17 @@ var render = function() {
       _vm._v(" "),
       _c(
         "p",
+        { staticClass: "details strong", staticStyle: { color: "#565656" } },
+        [_vm._v(_vm._s(_vm.project.location))]
+      ),
+      _vm._v(" "),
+      _c(
+        "p",
         {
           staticClass: "details strong mb-5",
           staticStyle: { color: "#565656" }
         },
-        [_vm._v(_vm._s(_vm.project.location))]
+        [_vm._v(_vm._s(_vm.project.year))]
       )
     ])
   ])
