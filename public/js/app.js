@@ -50700,7 +50700,7 @@ var render = function() {
   return _c("div", [
     _c(
       "div",
-      { attrs: { id: "page" } },
+      { staticClass: "container-fluid", attrs: { id: "page" } },
       [
         _vm._m(0),
         _vm._v(" "),
@@ -50708,7 +50708,7 @@ var render = function() {
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "container-fluid mt-5 pr-5 pl-5" },
+          { staticClass: "mt-5 pr-5 pl-5" },
           [
             _c("desktop-categories-menu", {
               directives: [

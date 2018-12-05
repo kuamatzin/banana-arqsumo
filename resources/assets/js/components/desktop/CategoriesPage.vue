@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="page">
+        <div id="page" class="container-fluid">
             <a href="/"><img src="/images/blacklogo.svg" width="60" height="60" alt="logo" class="logo"></a>
             <div class="menu">
                 <div class="row mr-2 mt-3">
@@ -19,7 +19,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid mt-5 pr-5 pl-5">
+            <div class="mt-5 pr-5 pl-5">
                 <desktop-categories-menu v-show="show_project_detail == false"></desktop-categories-menu>
                 
                 <desktop-categories v-show="show_project_detail == false" @loadProjectDetail="loadProjectDetail"></desktop-categories>
