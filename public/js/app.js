@@ -48587,7 +48587,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     methods: {
         getImagesFromCategory: function getImagesFromCategory(category) {
-            this.active_project = category;
+            var _this2 = this;
+
+            this.active_project = 100;
+            setTimeout(function () {
+                return _this2.active_project = category;
+            }, 300);
         },
         projectDetail: function projectDetail(image) {
             this.$emit('loadProjectDetail', image);
@@ -48603,31 +48608,40 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "row mb-5" },
-    _vm._l(_vm.projects[_vm.active_project], function(project) {
-      return _c("div", { staticClass: "col-md-4", attrs: { id: "images" } }, [
-        _c("div", { staticClass: "project-detail" }, [
-          _c("img", {
-            staticClass: "image pointer img-fluid mt-4",
-            attrs: { src: project.main_image },
-            on: {
-              click: function($event) {
-                _vm.projectDetail(project)
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "middle" }, [
-            _c("div", { staticClass: "text strong" }, [
-              _vm._v(_vm._s(project.name))
-            ])
-          ])
-        ])
-      ])
-    })
-  )
+  return _vm.active_project != 100
+    ? _c(
+        "div",
+        { staticClass: "row mb-5" },
+        _vm._l(_vm.projects[_vm.active_project], function(project) {
+          return _c(
+            "div",
+            {
+              staticClass: "col-md-4 animated flipInX",
+              attrs: { id: "images" }
+            },
+            [
+              _c("div", { staticClass: "project-detail" }, [
+                _c("img", {
+                  staticClass: "image pointer img-fluid mt-4",
+                  attrs: { src: project.main_image },
+                  on: {
+                    click: function($event) {
+                      _vm.projectDetail(project)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "middle" }, [
+                  _c("div", { staticClass: "text strong" }, [
+                    _vm._v(_vm._s(project.name))
+                  ])
+                ])
+              ])
+            ]
+          )
+        })
+      )
+    : _vm._e()
 }
 var staticRenderFns = []
 render._withStripped = true
