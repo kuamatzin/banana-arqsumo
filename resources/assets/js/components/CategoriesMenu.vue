@@ -49,7 +49,6 @@
         font-size: 1.2rem;
     }
     .subcategories:hover{
-        font-family: 'Helvetica Neue LT Std';
         color: #282E41;
     }
 </style>

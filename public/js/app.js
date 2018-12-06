@@ -47709,7 +47709,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.active[data-v-7691e212] {\n    font-family: 'Helvetica Neue LT Std';\n    color: #282E41;\n}\n.subcategories[data-v-7691e212] {\n    font-size: 1.2rem;\n}\n.subcategories[data-v-7691e212]:hover{\n    font-family: 'Helvetica Neue LT Std';\n    color: #282E41;\n}\n", ""]);
+exports.push([module.i, "\n.active[data-v-7691e212] {\n    font-family: 'Helvetica Neue LT Std';\n    color: #282E41;\n}\n.subcategories[data-v-7691e212] {\n    font-size: 1.2rem;\n}\n.subcategories[data-v-7691e212]:hover{\n    color: #282E41;\n}\n", ""]);
 
 // exports
 
@@ -47993,7 +47993,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.active[data-v-a6f7f036] {\n    font-family: 'Helvetica Neue LT Std';\n    color: #282E41;\n}\n.subcategories[data-v-a6f7f036] {\n    font-size: 1.2rem;\n}\n.subcategories[data-v-a6f7f036]:hover{\n    font-family: 'Helvetica Neue LT Std';\n    color: #282E41;\n}\n", ""]);
+exports.push([module.i, "\n.active[data-v-a6f7f036] {\n    font-family: 'Helvetica Neue LT Std';\n    color: #282E41;\n}\n.subcategories[data-v-a6f7f036] {\n    font-size: 1.2rem;\n}\n.subcategories[data-v-a6f7f036]:hover{\n    color: #282E41;\n}\n", ""]);
 
 // exports
 
@@ -48616,7 +48616,7 @@ var render = function() {
           return _c(
             "div",
             {
-              staticClass: "col-md-4 animated flipInX",
+              staticClass: "col-md-4 animated fadeInDown",
               attrs: { id: "images" },
               on: {
                 click: function($event) {
@@ -49128,7 +49128,7 @@ var render = function() {
           return _c(
             "div",
             {
-              staticClass: "col-md-4 animated flipInX",
+              staticClass: "col-md-4 animated fadeInDown",
               attrs: { id: "images" },
               on: {
                 click: function($event) {
