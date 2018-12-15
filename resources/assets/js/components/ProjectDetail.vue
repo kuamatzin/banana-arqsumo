@@ -64,6 +64,7 @@ export default {
 
   watch: {
     project() {
+      window.scrollTo(0, 0);
       this.url_images = this.project.slice(0, -5);
     }
   },

@@ -9,7 +9,7 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <video playsinline autoplay loop muted class="video">
-                                <source src="/images/slider/video.mp4" type="video/mp4">
+                                <source src="/images/slider/video_low.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>

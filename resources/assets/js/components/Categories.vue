@@ -18,13 +18,13 @@
                 this.getImagesFromCategory(category)
             });
 
-            this.getImagesFromCategory(0)
+            this.getImagesFromCategory(3)
         },
 
         data(){
             return {
                 images: false,
-                active_project: 0,
+                active_project: 3,
                 projects:[ 
                     [
                         {

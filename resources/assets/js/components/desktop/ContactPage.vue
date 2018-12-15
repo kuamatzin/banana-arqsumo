@@ -1,9 +1,9 @@
 <template>
     <div>
         <div id="page">
-            <a href="/"><img src="/images/blacklogo.svg" width="60" height="60" alt="logo" class="logo"></a>
+            <a href="/"><img src="/images/blacklogo.svg" width="100" height="100" alt="logo" class="logo"></a>
             <div class="menu">
-                <div class="row mr-2 mt-3">
+                <div class="row mr-2 mt-4">
                     <div class="col-md-5">
                         <a href="/categorias" style="text-decoration:none">
                             <h3 class="text-menu-inverse">PORTAFOLIO</h3>
