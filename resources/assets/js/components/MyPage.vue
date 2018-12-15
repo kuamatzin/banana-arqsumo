@@ -10,6 +10,8 @@
                         <div class="carousel-item active">
                             <video playsinline autoplay loop muted class="video">
                                 <source src="/images/slider/video_low.mp4" type="video/mp4">
+                                <source src="/images/slider/video_low.ogg" type="video/ogg">
+                                <source src="/images/slider/video_low.webm" type="video/webm">
                             </video>
                         </div>
                     </div>
