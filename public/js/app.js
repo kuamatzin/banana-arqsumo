@@ -49317,7 +49317,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -49374,32 +49373,28 @@ var render = function() {
                           _c(
                             "video",
                             {
+                              staticClass: "video",
                               attrs: {
-                                playsinline: "",
                                 autoplay: "",
+                                muted: "",
                                 loop: "",
-                                muted: ""
+                                playsinline: ""
                               },
                               domProps: { muted: true }
                             },
                             [
                               _c("source", {
                                 attrs: {
-                                  src: "/images/slider/video_low.mp4",
+                                  src:
+                                    "https://multicdn.synq.fm/projects/bb/56/bb56f28429b942c08dc5128e4b7ba48c/derivatives/videos/71/43/71439ccd73c74ecc8bbab7abd3bb98bc/mp4_1080/71439ccd73c74ecc8bbab7abd3bb98bc_mp4_1080.mp4",
                                   type: "video/mp4"
                                 }
                               }),
                               _vm._v(" "),
                               _c("source", {
                                 attrs: {
-                                  src: "/images/slider/video_low.ogg",
-                                  type: "video/ogg"
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("source", {
-                                attrs: {
-                                  src: "/images/slider/video_low.webm",
+                                  src:
+                                    "https://multicdn.synq.fm/projects/bb/56/bb56f28429b942c08dc5128e4b7ba48c/derivatives/videos/71/43/71439ccd73c74ecc8bbab7abd3bb98bc/webm_720/71439ccd73c74ecc8bbab7abd3bb98bc_webm_720.webm",
                                   type: "video/webm"
                                 }
                               })
