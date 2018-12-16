@@ -49387,22 +49387,21 @@ var render = function() {
                             [
                               _c("source", {
                                 attrs: {
-                                  src: _vm.url + "/images/slider/video_low.mp4",
+                                  src: _vm.url + "/video_low.mp4",
                                   type: "video/mp4"
                                 }
                               }),
                               _vm._v(" "),
                               _c("source", {
                                 attrs: {
-                                  src:
-                                    _vm.url + "/images/slider/video_low.webm",
+                                  src: _vm.url + "/video_low.webm",
                                   type: "video/webm"
                                 }
                               }),
                               _vm._v(" "),
                               _c("source", {
                                 attrs: {
-                                  src: _vm.url + "/images/slider/video_low.ogg",
+                                  src: _vm.url + "/video_low.ogg",
                                   type: "video/ogg"
                                 }
                               })
