@@ -11,6 +11,7 @@
                             <video autoplay muted loop playsinline class="video">
                                 <source :src="url + '/images/slider/video_low.mp4'" type="video/mp4" />
                                 <source :src="url + '/images/slider/video_low.webm'" type="video/webm" />
+                                <source :src="url + '/images/slider/video_low.ogg'" type="video/ogg" />
                             </video>
                         </div>
                     </div>

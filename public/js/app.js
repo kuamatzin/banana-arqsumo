@@ -49317,6 +49317,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -49396,6 +49397,13 @@ var render = function() {
                                   src:
                                     _vm.url + "/images/slider/video_low.webm",
                                   type: "video/webm"
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c("source", {
+                                attrs: {
+                                  src: _vm.url + "/images/slider/video_low.ogg",
+                                  type: "video/ogg"
                                 }
                               })
                             ]
