@@ -49321,6 +49321,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
+            url: window.location.origin,
             show_menu: false
         };
     }
@@ -49385,8 +49386,7 @@ var render = function() {
                             [
                               _c("source", {
                                 attrs: {
-                                  src:
-                                    "https://multicdn.synq.fm/projects/bb/56/bb56f28429b942c08dc5128e4b7ba48c/derivatives/videos/71/43/71439ccd73c74ecc8bbab7abd3bb98bc/mp4_1080/71439ccd73c74ecc8bbab7abd3bb98bc_mp4_1080.mp4",
+                                  src: _vm.url + "/images/slider/video_low.mp4",
                                   type: "video/mp4"
                                 }
                               }),
@@ -49394,7 +49394,7 @@ var render = function() {
                               _c("source", {
                                 attrs: {
                                   src:
-                                    "https://multicdn.synq.fm/projects/bb/56/bb56f28429b942c08dc5128e4b7ba48c/derivatives/videos/71/43/71439ccd73c74ecc8bbab7abd3bb98bc/webm_720/71439ccd73c74ecc8bbab7abd3bb98bc_webm_720.webm",
+                                    _vm.url + "/images/slider/video_low.webm",
                                   type: "video/webm"
                                 }
                               })

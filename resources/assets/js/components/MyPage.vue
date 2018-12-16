@@ -9,8 +9,8 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <video autoplay muted loop playsinline class="video">
-                                <source src="https://multicdn.synq.fm/projects/bb/56/bb56f28429b942c08dc5128e4b7ba48c/derivatives/videos/71/43/71439ccd73c74ecc8bbab7abd3bb98bc/mp4_1080/71439ccd73c74ecc8bbab7abd3bb98bc_mp4_1080.mp4" type="video/mp4" />
-                                <source src="https://multicdn.synq.fm/projects/bb/56/bb56f28429b942c08dc5128e4b7ba48c/derivatives/videos/71/43/71439ccd73c74ecc8bbab7abd3bb98bc/webm_720/71439ccd73c74ecc8bbab7abd3bb98bc_webm_720.webm" type="video/webm" />
+                                <source :src="url + '/images/slider/video_low.mp4'" type="video/mp4" />
+                                <source :src="url + '/images/slider/video_low.webm'" type="video/webm" />
                             </video>
                         </div>
                     </div>
@@ -57,6 +57,7 @@
     export default {
         data() {
             return {
+                url: window.location.origin,
                 show_menu: false
             }
         }
