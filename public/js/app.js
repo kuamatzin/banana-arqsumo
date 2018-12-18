@@ -49839,8 +49839,8 @@ var staticRenderFns = [
         staticClass: "logo",
         attrs: {
           src: "/images/whitelogo.svg",
-          width: "100",
-          height: "100",
+          width: "80",
+          height: "80",
           alt: "logo"
         }
       })
@@ -50813,8 +50813,8 @@ var staticRenderFns = [
         staticClass: "logo",
         attrs: {
           src: "/images/blacklogo.svg",
-          width: "100",
-          height: "100",
+          width: "80",
+          height: "80",
           alt: "logo"
         }
       })
@@ -51634,8 +51634,8 @@ var staticRenderFns = [
             staticClass: "logo",
             attrs: {
               src: "/images/blacklogo.svg",
-              width: "100",
-              height: "100",
+              width: "80",
+              height: "80",
               alt: "logo"
             }
           })

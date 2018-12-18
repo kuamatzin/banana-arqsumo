@@ -1,7 +1,7 @@
 <template>
     <div>
         <div id="page">
-            <a href="/"><img src="/images/whitelogo.svg" width="100" height="100" alt="logo" class="logo"></a>
+            <a href="/"><img src="/images/whitelogo.svg" width="80" height="80" alt="logo" class="logo"></a>
             <div class="menu">
                 <div class="row mr-5 mt-4">
                     <div class="col-md-5 col-sm-5 col-5">
