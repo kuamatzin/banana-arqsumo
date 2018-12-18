@@ -49774,7 +49774,7 @@ var render = function() {
             attrs: {
               id: "carouselExampleIndicators",
               "data-ride": "carousel",
-              "data-interval": "20000"
+              "data-interval": "18000"
             }
           },
           [
