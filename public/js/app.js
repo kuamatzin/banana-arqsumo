@@ -50200,7 +50200,7 @@ var render = function() {
         [
           _c("i", { staticClass: "fas fa-arrow-left mb-3 return-icon" }),
           _vm._v(" "),
-          _c("h4", { staticClass: "ml-2 return" }, [
+          _c("h4", { staticClass: "ml-2 mt-4 return" }, [
             _vm._v("regresar al portafolio")
           ])
         ]
