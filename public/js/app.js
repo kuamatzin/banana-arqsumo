@@ -50239,11 +50239,12 @@ var render = function() {
                 {
                   key: key,
                   staticClass: "carousel-item",
-                  class: { active: key == 1 }
+                  class: { active: key == 1 },
+                  staticStyle: { "background-color": "black" }
                 },
                 [
                   _c("img", {
-                    staticClass: "d-block w-100",
+                    staticClass: "d-block mx-auto",
                     attrs: { src: image }
                   })
                 ]

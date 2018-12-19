@@ -14,8 +14,8 @@
           <li data-target="#carouselExampleIndicators" v-for="(image, key) in project.images" :key="key" :data-slide-to="key" :class="{'active': key == 1}"></li>
         </ol>
         <div class="carousel-inner">
-          <div v-for="(image, key) in project.images" :key="key" class="carousel-item" :class="{'active': key == 1}">
-            <img class="d-block w-100" :src="image">
+          <div v-for="(image, key) in project.images" :key="key" class="carousel-item" :class="{'active': key == 1}" style="background-color: black">
+            <img class="d-block mx-auto" :src="image">
           </div>
         </div>
         <a
