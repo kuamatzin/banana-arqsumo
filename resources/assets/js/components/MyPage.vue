@@ -34,7 +34,7 @@
                     </a>
                 </div>
 
-                <div>
+                <div class="mb-3">
                     <a href="https://www.facebook.com/arqmasuno/?ref=br_rs" target="_blank">
                         <img src="/images/social/instagram-white.svg" alt="instagram" width="30px" class="ml-4 pointer">
                     </a>

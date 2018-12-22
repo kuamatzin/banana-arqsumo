@@ -49538,7 +49538,7 @@ var staticRenderFns = [
           ]
         ),
         _vm._v(" "),
-        _c("div", [
+        _c("div", { staticClass: "mb-3" }, [
           _c(
             "a",
             {
