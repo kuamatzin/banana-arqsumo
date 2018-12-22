@@ -49317,7 +49317,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -49343,7 +49342,7 @@ var render = function() {
           _vm._v(" "),
           _c("i", {
             staticClass: "fas fa-bars menu",
-            staticStyle: { "font-size": "28px", color: "#848484" },
+            staticStyle: { "font-size": "28px", color: "white" },
             attrs: { alt: "logo" },
             on: {
               click: function($event) {
@@ -49469,7 +49468,7 @@ var staticRenderFns = [
       _c("img", {
         staticClass: "logo",
         attrs: {
-          src: "/images/blacklogo.svg",
+          src: "/images/whitelogo.svg",
           width: "60",
           height: "60",
           alt: "logo"
@@ -49485,7 +49484,7 @@ var staticRenderFns = [
       _c("img", {
         staticClass: "logo",
         attrs: {
-          src: "/images/logo.svg",
+          src: "/images/whitelogo.svg",
           width: "60",
           height: "60",
           alt: "logo"
@@ -49581,7 +49580,7 @@ var staticRenderFns = [
           )
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "mt-3 mb-5" }, [
+        _c("div", { staticClass: "mb-5" }, [
           _c("p", { staticClass: "text-menu-footer text-center" }, [
             _vm._v("+52 (222) 543 5467")
           ]),
