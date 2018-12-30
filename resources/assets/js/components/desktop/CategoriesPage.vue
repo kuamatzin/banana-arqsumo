@@ -25,7 +25,7 @@
                 <desktop-categories v-show="show_project_detail == false" @loadProjectDetail="loadProjectDetail"></desktop-categories>
             </div>
 
-            <project-detail v-show="show_project_detail == true" :project="project" @loadCategories="loadCategories"></project-detail>
+            <project-detail v-show="show_project_detail == true" :project="project" :mobile="false" @loadCategories="loadCategories"></project-detail>
             
         </div>
     </div>

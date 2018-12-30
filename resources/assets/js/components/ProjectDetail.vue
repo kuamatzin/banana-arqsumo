@@ -4,7 +4,7 @@
     <div class="container">
       <div class="d-flex align-items-end mt-5 pointer" @click="backToCategories">
         <i class="fas fa-arrow-left mb-3 return-icon"></i>
-        <h4 class="ml-2 mt-4 return">regresar al portafolio</h4>
+        <h4 class="ml-2 mt-4 return">regresar al portafolio {{mobile}}</h4>
       </div>
     </div>
 
@@ -15,7 +15,7 @@
         </ol>
         <div class="carousel-inner">
           <div v-for="(image, key) in project.images" :key="key" class="carousel-item" :class="{'active': key == 1}" style="background-color: black">
-            <img class="d-block mx-auto" :src="image">
+            <img :class="{'desktop mx-auto': mobile == false, 'mobile mx-auto': mobile}" class="d-block" :src="image">
           </div>
         </div>
         <a
@@ -60,7 +60,7 @@
 
 <script>
 export default {
-  props: ["project"],
+  props: ["project", "mobile"],
 
   watch: {
     project() {
@@ -100,8 +100,13 @@ export default {
   padding: 0;
 }
 
-.carousel-item img {
+.desktop {
   max-height: 624px;
+  min-width: auto;
+}
+
+.mobile {
+  max-height: 270px;
   min-width: auto;
 }
 </style>

@@ -9,7 +9,7 @@
                 
                 <categories v-show="show_project_detail == false" @loadProjectDetail="loadProjectDetail"></categories>
 
-                <project-detail v-show="show_project_detail == true" :project="project" @loadCategories="loadCategories"></project-detail>
+                <project-detail v-show="show_project_detail == true" :project="project" :mobile="true" @loadCategories="loadCategories"></project-detail>
             </div>
         </div>
 
