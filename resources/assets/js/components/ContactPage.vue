@@ -7,13 +7,7 @@
             <div class="container mt-5">
                 <div class="container mt-5">
                     <strong><h2 class="text-center mt-5 strong">CONTÁCTANOS</h2></strong>
-    
-                    <div class="mt-4">
-                        <p class="text-center">Tel: 222 543 5467</p>
-                        <p class="text-center">E-mail: hello@arqmasuno.mx</p>
-                        <p class="text-center">Camino Real Momoxpan 1811 - 19 72777 San Pedro Cholula, Puebla</p>
-                    </div>
-    
+
                     <form class="mx-4 mt-5">
                         <div class="form-group">
                             <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Nombre" style="background-color: #F4F4F4; border: 1px solid #F4F4F4">
@@ -44,10 +38,16 @@
                             <button type="submit" class="btn btn-secondary send" style="padding: 0.375rem 2.75rem">Enviar</button>
                         </div>
                     </form>
+
+                    <div class="mt-5">
+                        <p class="text-center no-spaces">Tel: 222 543 5467</p>
+                        <p class="text-center no-spaces">E-mail: hello@arqmasuno.mx</p>
+                        <p class="text-center no-spaces">Camino Real Momoxpan 1811 - 19 72777 San Pedro Cholula, Puebla</p>
+                    </div>
     
-                    <div class="d-flex align-items-start justify-content-center mt-5">
-                        <img src="/images/social/instagram.svg" alt="instagram" width="50px" class="mx-3">
-                        <img src="/images/social/facebook.svg" alt="facebook" width="50px" class="mx-3">
+                    <div class="d-flex align-items-start justify-content-center mt-5 mb-5">
+                        <img src="/images/social/instagram.svg" alt="instagram" width="30px" class="mx-3">
+                        <img src="/images/social/facebook.svg" alt="facebook" width="30px" class="mx-3">
                     </div>
                 </div>
             </div>
@@ -97,3 +97,10 @@
         }
     }
 </script>
+
+<style scoped="">
+    .no-spaces {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+</style>
