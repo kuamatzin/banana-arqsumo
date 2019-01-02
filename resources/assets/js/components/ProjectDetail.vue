@@ -9,12 +9,13 @@
     </div>
 
     <div class="container">
-      <div id="carouselExampleControls" class="carousel slide mt-4" data-ride="carousel">
+      
+      <div id="carouselExampleControls" class="carousel slide mt-4">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" v-for="(image, key) in project.images" :key="key" :data-slide-to="key" :class="{'active': key == 1}"></li>
+          <li data-target="#carouselExampleIndicators" v-for="(image, key) in project.images" :key="key" :data-slide-to="key" :class="{'active': key == 0}"></li>
         </ol>
         <div class="carousel-inner">
-          <div v-for="(image, key) in project.images" :key="key" class="carousel-item" :class="{'active': key == 1}" style="background-color: black">
+          <div v-for="(image, key) in project.images" :key="key" class="carousel-item" :class="{'active': key == 0}" style="background-color: black">
             <img :class="{'desktop mx-auto': mobile == false, 'mobile mx-auto': mobile}" class="d-block" :src="image">
           </div>
         </div>
@@ -37,6 +38,11 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+
+      <div class="d-flex justify-content-end mt-1">
+        <i class="fas fa-th image-icons" @click="showGridImages"></i>
+        <i class="fas fa-expand image-icons ml-3" @click="fullscreenImage"></i>
+      </div>
     </div>
 
     <div class="container">
@@ -55,6 +61,27 @@
       <p class="details strong" style="color: #565656">{{project.location}}</p>
       <p class="details strong mb-5" style="color: #565656">{{project.year}}</p>
     </div>
+    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true" style="background-color: black">
+        <div class="modal-dialog modal-full" role="document" style="background-color: black">
+            <div class="modal-content" style="background-color: black">
+                <div class="modal-header" style="background-color: black">
+                    <button type="button" class="close" aria-label="Close" @click="closeModal">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="result" style="background-color: black">
+                  <img :src="modal_image" class="img-fluid d-block mx-auto" v-if="imageFullscreen">
+                  <div class="container" v-else>
+                    <div class="row">
+                      <div class="col-md-4 mb-5" v-for="image in project.images">
+                        <img :src="image" class="img-fluid d-block mx-auto" style="max-height: 365px; cursor: pointer;" @click="loadFullscreenImage(image)">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
 </template>
 
@@ -64,20 +91,58 @@ export default {
 
   watch: {
     project() {
+      $('.carousel').carousel();
+      this.launchCarouselActiveImage();
       window.scrollTo(0, 0);
-      this.url_images = this.project.slice(0, -5);
+      //this.url_images = this.project.slice(0, -5);
+      this.active_image = this.project.images[0]
+      this.modal_image = this.active_image
     }
   },
 
   data() {
     return {
-      url_images: ""
+      url_images: "",
+      active_image: "",
+      modal_image: "",
+      imageFullscreen: false
     };
   },
 
   methods: {
     backToCategories() {
       this.$emit("loadCategories");
+    },
+    fullscreenImage() {
+      this.modal_image = this.active_image;
+      this.imageFullscreen = true;
+      $('#myModal').modal('show');
+    },
+    launchCarouselActiveImage() {
+      var that = this;
+      setTimeout(function(){
+        var carouselEl = $('.carousel');
+        var carouselItems = carouselEl.find('.carousel-item');
+        carouselEl.carousel().on('slid.bs.carousel', function (event) {
+          that.active_image = carouselItems.siblings('.active').find('img').attr("src");
+        })
+      }, 300)
+    },
+    showGridImages(){
+      this.imageFullscreen = false;
+      $('#myModal').modal('show');
+    },
+    loadFullscreenImage(){
+      this.modal_image = this.active_image;
+      this.imageFullscreen = 100;
+      $('#myModal').modal('show');
+    },
+    closeModal(){
+      if (this.imageFullscreen === 100) {
+        this.imageFullscreen = false;
+      } else {
+        $('#myModal').modal('hide')
+      }
     }
   }
 };
@@ -108,5 +173,28 @@ export default {
 .mobile {
   max-height: 200px;
   min-width: auto;
+}
+
+.modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+
+.modal-full .modal-content {
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.modal-header {
+    border-bottom: 0px;
+}
+.image-icons {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #3D3D3E;
+}
+
+.image-icons:hover {
+  color: #9E9E9E;
 }
 </style>

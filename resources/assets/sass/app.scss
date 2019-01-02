@@ -83,6 +83,17 @@ body {
     cursor: pointer;
 }
 
+.logom {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    background-color: transparent;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
 .menu {
     position: absolute;
     right: 0px;

@@ -1,7 +1,7 @@
 <template>
     <div>
         <div id="page" v-if="show_menu == false">
-            <a href="/"><img src="/images/whitelogo.svg" width="60" height="60" alt="logo" class="logo"></a>
+            <a href="/"><img src="/images/whitelogo.svg" width="60" height="60" alt="logo" class="logom"></a>
             <i class="fas fa-bars menu" style="font-size: 28px; color: white" alt="logo" @click="show_menu = true"></i>
     
             <div class="content-page" v-if="show_menu == false">
@@ -20,7 +20,7 @@
         </div>
     
         <div style="background-color: #565656; height: 100vh;" id="menu" v-else class="pl-4">
-            <a href="/"><img src="/images/whitelogo.svg" width="60" height="60" alt="logo" class="logo"></a>
+            <a href="/"><img src="/images/whitelogo.svg" width="60" height="60" alt="logo" class="logom"></a>
             <img src="/images/close.png" width="25" height="25" alt="logo" class="menu" v-if="show_menu == true" @click="show_menu = false">
             <img src="/images/menu.svg" width="25" height="25" alt="logo" class="menu" v-else @click="show_menu = false">
     
@@ -29,7 +29,7 @@
                     <a href="/categorias" style="text-decoration:none">
                         <h3 class="text-menu text-center">PORTAFOLIO</h3>
                     </a>
-                    <a href="/contacto" style="text-decoration:none" class="mt-2">
+                    <a href="/contacto" style="text-decoration:none">
                         <h3 class="text-menu text-center">CONTACTO</h3>
                     </a>
                 </div>
