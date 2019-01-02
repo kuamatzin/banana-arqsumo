@@ -620,8 +620,8 @@
   opacity: 0.4;
 }
 
-.project-detail:focus .middle
-.project-detail:hover .middle
+.project-detail:focus .middle,
+.project-detail:hover .middle,
 .project-detail:active .middle {
   opacity: 1;
 }
