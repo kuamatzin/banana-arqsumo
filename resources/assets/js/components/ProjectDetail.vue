@@ -132,8 +132,8 @@ export default {
       this.imageFullscreen = false;
       $('#myModal').modal('show');
     },
-    loadFullscreenImage(){
-      this.modal_image = this.active_image;
+    loadFullscreenImage(image){
+      this.modal_image = image;
       this.imageFullscreen = 100;
       $('#myModal').modal('show');
     },
