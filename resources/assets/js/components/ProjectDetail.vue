@@ -4,7 +4,7 @@
     <div class="container">
       <div class="d-flex align-items-end mt-5 pointer" @click="backToCategories">
         <i class="fas fa-arrow-left mb-3 return-icon"></i>
-        <h4 class="ml-2 mt-4 return">regresar al portafolio {{mobile}}</h4>
+        <h4 class="ml-2 mt-4 return">regresar al portafolio</h4>
       </div>
     </div>
 
