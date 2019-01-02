@@ -106,7 +106,7 @@ export default {
 }
 
 .mobile {
-  max-height: 270px;
+  max-height: 200px;
   min-width: auto;
 }
 </style>
