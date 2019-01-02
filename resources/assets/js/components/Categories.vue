@@ -4,7 +4,7 @@
             <div class="project-detail">
                 <img :src="project.main_image" class="image pointer img-fluid mt-4">
                 <div class="middle pointer">
-                    <div class="text strong">{{project.name}}</div>
+                    <div class="text strong mt-4">{{project.name}}</div>
                 </div>
             </div>
         </div>
