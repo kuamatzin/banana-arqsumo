@@ -2,7 +2,7 @@
     <div>
         <div v-if="show_menu == false">
             <a href="/"><img src="/images/blacklogo.svg" width="60" height="60" alt="logo" class="logom"></a>
-            <i class="fas fa-bars menu" style="font-size: 28px; color: #848484" alt="logo" @click="show_menu = true"></i>
+            <img src="/images/menu-grey-button.svg" class="menu" width="28px" @click="show_menu = true">
 
             <div class="container mt-5">
                 <categories-menu v-show="show_project_detail == false"></categories-menu>

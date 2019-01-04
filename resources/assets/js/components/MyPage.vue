@@ -2,8 +2,8 @@
     <div>
         <div id="page" v-if="show_menu == false">
             <a href="/"><img src="/images/whitelogo.svg" width="60" height="60" alt="logo" class="logom"></a>
-            <i class="fas fa-bars menu" style="font-size: 28px; color: white" alt="logo" @click="show_menu = true"></i>
-    
+            <img src="/images/menu-white-button.svg" class="menu" width="28px" @click="show_menu = true">
+
             <div class="content-page" v-if="show_menu == false">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
