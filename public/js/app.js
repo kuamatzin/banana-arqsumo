@@ -50080,7 +50080,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.return[data-v-90aec9ba] {\n  font-size: 1.2rem;\n}\n.return[data-v-90aec9ba]:hover {\n  font-size: 1.1rem;\n  font-family: 'Helvetica Neue LT Std';\n  color: #282e41;\n}\n.details[data-v-90aec9ba] {\n  font-size: 1.2rem;\n  margin: 0;\n  padding: 0;\n}\n.desktop[data-v-90aec9ba] {\n  max-height: 624px;\n  min-width: auto;\n}\n.mobile[data-v-90aec9ba] {\n  max-height: 200px;\n  min-width: auto;\n}\n.modal-full[data-v-90aec9ba] {\n    min-width: 100%;\n    margin: 0;\n}\n.modal-full .modal-content[data-v-90aec9ba] {\n    min-height: 100vh;\n    max-height: 100vh;\n}\n.modal-header[data-v-90aec9ba] {\n    border-bottom: 0px;\n}\n.image-icons[data-v-90aec9ba] {\n  cursor: pointer;\n  font-size: 1.5rem;\n  color: #3D3D3E;\n}\n.image-icons[data-v-90aec9ba]:hover {\n  color: #9E9E9E;\n}\n", ""]);
+exports.push([module.i, "\n.fullimage[data-v-90aec9ba] {\n    width:auto;\n    height:auto;\n    max-width:100%;\n    min-height:100vh;\n    max-height:100vh;\n}\n.return[data-v-90aec9ba] {\n  font-size: 1.2rem;\n}\n.return[data-v-90aec9ba]:hover {\n  font-size: 1.1rem;\n  font-family: 'Helvetica Neue LT Std';\n  color: #282e41;\n}\n.details[data-v-90aec9ba] {\n  font-size: 1.2rem;\n  margin: 0;\n  padding: 0;\n}\n.desktop[data-v-90aec9ba] {\n  max-height: 624px;\n  min-width: auto;\n}\n.mobile[data-v-90aec9ba] {\n  max-height: 200px;\n  min-width: auto;\n}\n.modal-full[data-v-90aec9ba] {\n    min-width: 100%;\n    margin: 0;\n}\n.modal-body[data-v-90aec9ba] {\n  padding: 0px !important;\n}\n.modal-full .modal-content[data-v-90aec9ba] {\n    min-height: 100vh;\n    max-height: 100vh;\n}\n.modal-header[data-v-90aec9ba] {\n    border-bottom: 0px;\n}\n.image-icons[data-v-90aec9ba] {\n  cursor: pointer;\n  font-size: 1.5rem;\n  color: #3D3D3E;\n}\n.image-icons[data-v-90aec9ba]:hover {\n  color: #9E9E9E;\n}\n", ""]);
 
 // exports
 
@@ -50091,19 +50091,6 @@ exports.push([module.i, "\n.return[data-v-90aec9ba] {\n  font-size: 1.2rem;\n}\n
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -50222,10 +50209,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         });
       }, 300);
     },
-    showGridImages: function showGridImages() {
-      this.imageFullscreen = false;
-      $('#myModal').modal('show');
-    },
     loadFullscreenImage: function loadFullscreenImage(image) {
       this.modal_image = image;
       this.imageFullscreen = 100;
@@ -50326,12 +50309,7 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "d-flex justify-content-end mt-1" }, [
         _c("i", {
-          staticClass: "fas fa-th image-icons",
-          on: { click: _vm.showGridImages }
-        }),
-        _vm._v(" "),
-        _c("i", {
-          staticClass: "fas fa-expand image-icons ml-3",
+          staticClass: "fas fa-expand image-icons",
           on: { click: _vm.fullscreenImage }
         })
       ])
@@ -50413,32 +50391,10 @@ var render = function() {
               "div",
               {
                 staticClass: "modal-content",
-                staticStyle: { "background-color": "black" }
+                staticStyle: { "background-color": "black" },
+                on: { click: _vm.closeModal }
               },
               [
-                _c(
-                  "div",
-                  {
-                    staticClass: "modal-header",
-                    staticStyle: { "background-color": "black" }
-                  },
-                  [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "close",
-                        attrs: { type: "button", "aria-label": "Close" },
-                        on: { click: _vm.closeModal }
-                      },
-                      [
-                        _c("span", { attrs: { "aria-hidden": "true" } }, [
-                          _vm._v("×")
-                        ])
-                      ]
-                    )
-                  ]
-                ),
-                _vm._v(" "),
                 _c(
                   "div",
                   {
@@ -50447,38 +50403,14 @@ var render = function() {
                     attrs: { id: "result" }
                   },
                   [
-                    _vm.imageFullscreen
-                      ? _c("img", {
-                          staticClass: "img-fluid d-block mx-auto",
-                          attrs: { src: _vm.modal_image }
-                        })
-                      : _c("div", { staticClass: "container" }, [
-                          _c(
-                            "div",
-                            { staticClass: "row" },
-                            _vm._l(_vm.project.images, function(image) {
-                              return _c(
-                                "div",
-                                { staticClass: "col-md-4 mb-5" },
-                                [
-                                  _c("img", {
-                                    staticClass: "img-fluid d-block mx-auto",
-                                    staticStyle: {
-                                      "max-height": "365px",
-                                      cursor: "pointer"
-                                    },
-                                    attrs: { src: image },
-                                    on: {
-                                      click: function($event) {
-                                        _vm.loadFullscreenImage(image)
-                                      }
-                                    }
-                                  })
-                                ]
-                              )
-                            })
-                          )
-                        ])
+                    _c("img", {
+                      staticClass: " mx-auto d-block",
+                      class: {
+                        fullimage: _vm.mobile == false,
+                        "img-fluid": _vm.mobile
+                      },
+                      attrs: { src: _vm.modal_image }
+                    })
                   ]
                 )
               ]

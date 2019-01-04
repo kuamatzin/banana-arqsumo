@@ -40,8 +40,7 @@
       </div>
 
       <div class="d-flex justify-content-end mt-1">
-        <i class="fas fa-th image-icons" @click="showGridImages"></i>
-        <i class="fas fa-expand image-icons ml-3" @click="fullscreenImage"></i>
+        <i class="fas fa-expand image-icons" @click="fullscreenImage"></i>
       </div>
     </div>
 
@@ -63,21 +62,9 @@
     </div>
     <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true" style="background-color: black">
         <div class="modal-dialog modal-full" role="document" style="background-color: black">
-            <div class="modal-content" style="background-color: black">
-                <div class="modal-header" style="background-color: black">
-                    <button type="button" class="close" aria-label="Close" @click="closeModal">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
+            <div class="modal-content" style="background-color: black" @click="closeModal">
                 <div class="modal-body" id="result" style="background-color: black">
-                  <img :src="modal_image" class="img-fluid d-block mx-auto" v-if="imageFullscreen">
-                  <div class="container" v-else>
-                    <div class="row">
-                      <div class="col-md-4 mb-5" v-for="image in project.images">
-                        <img :src="image" class="img-fluid d-block mx-auto" style="max-height: 365px; cursor: pointer;" @click="loadFullscreenImage(image)">
-                      </div>
-                    </div>
-                  </div>
+                  <img :class="{'fullimage': mobile == false, 'img-fluid': mobile}" class=" mx-auto d-block" :src="modal_image">
                 </div>
             </div>
         </div>
@@ -128,10 +115,6 @@ export default {
         })
       }, 300)
     },
-    showGridImages(){
-      this.imageFullscreen = false;
-      $('#myModal').modal('show');
-    },
     loadFullscreenImage(image){
       this.modal_image = image;
       this.imageFullscreen = 100;
@@ -149,6 +132,14 @@ export default {
 </script>
 
 <style scoped="">
+.fullimage {
+    width:auto;
+    height:auto;
+    max-width:100%;
+    min-height:100vh;
+    max-height:100vh;
+}
+
 .return {
   font-size: 1.2rem;
 }
@@ -178,6 +169,10 @@ export default {
 .modal-full {
     min-width: 100%;
     margin: 0;
+}
+
+.modal-body {
+  padding: 0px !important;
 }
 
 .modal-full .modal-content {
