@@ -64,7 +64,9 @@
         <div class="modal-dialog modal-full" role="document" style="background-color: black">
             <div class="modal-content" style="background-color: black" @click="closeModal">
                 <div class="modal-body" id="result" style="background-color: black">
-                  <img :class="{'fullimage': mobile == false, 'img-fluid': mobile}" class=" mx-auto d-block" :src="modal_image">
+                  <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+                    <img :class="{'fullimage': mobile == false, 'img-fluid': mobile}" :src="modal_image">
+                  </div>
                 </div>
             </div>
         </div>
