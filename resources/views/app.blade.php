@@ -33,7 +33,7 @@
             let last_character = current_location.charAt(current_location.length - 1)
             if(last_character != 'm') {
                 let redirect = window.location.href + '/m';
-                redirect = redirect.replace("//", "/");
+                redirect = redirect.replace("//m", "/m");
                 window.location.replace(redirect);
             }
         }
