@@ -65,6 +65,11 @@
 </script>
 
 <style scoped>
+p {
+    margin: 0;
+    padding: 0;
+}
+
 .carousel-item {
     height: 100vh;
     min-height: 300px;
