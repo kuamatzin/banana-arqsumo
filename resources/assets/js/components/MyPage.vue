@@ -9,9 +9,9 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <video autoplay muted loop playsinline class="video">
-                                <source :src="url + '/video_low.mp4'" type="video/mp4" />
-                                <source :src="url + '/video_low.webm'" type="video/webm" />
-                                <source :src="url + '/video_low.ogg'" type="video/ogg" />
+                                <source src="/video_low.mp4" type="video/mp4" />
+                                <source src="/video_low.webm" type="video/webm" />
+                                <source src="/video_low.ogg" type="video/ogg" />
                             </video>
                         </div>
                     </div>
