@@ -90,11 +90,11 @@
                             large_land: '407M2',
                             large_construction: '429M2',
                             year: '',
-                            main_image: '/images/categorias/comercial/Pabellón de las Flores/1.jpg',
+                            main_image: '/images/categorias/comercial/Pabellon de las Flores/1.jpg',
                             images: [
-                                '/images/categorias/comercial/Pabellón de las Flores/1.jpg',
-                                'images/categorias/comercial/Pabellón de las Flores/2.jpg',
-                                'images/categorias/comercial/Pabellón de las Flores/3.jpg'
+                                '/images/categorias/comercial/Pabellon de las Flores/1.jpg',
+                                'images/categorias/comercial/Pabellon de las Flores/2.jpg',
+                                'images/categorias/comercial/Pabellon de las Flores/3.jpg'
                             ]
                         },
                         {
@@ -165,13 +165,13 @@
                             large_land: '358M2',
                             large_construction: '344M2',
                             year: '2016',
-                            main_image: '/images/categorias/interiorismo/Casa San Andrés/1.jpg',
+                            main_image: '/images/categorias/interiorismo/Casa San Andres/1.jpg',
                             images: [
-                                '/images/categorias/interiorismo/Casa San Andrés/1.jpg',
-                                '/images/categorias/interiorismo/Casa San Andrés/2.jpg',
-                                '/images/categorias/interiorismo/Casa San Andrés/3.jpg',
-                                '/images/categorias/interiorismo/Casa San Andrés/4.jpg',
-                                '/images/categorias/interiorismo/Casa San Andrés/5.jpg'
+                                '/images/categorias/interiorismo/Casa San Andres/1.jpg',
+                                '/images/categorias/interiorismo/Casa San Andres/2.jpg',
+                                '/images/categorias/interiorismo/Casa San Andres/3.jpg',
+                                '/images/categorias/interiorismo/Casa San Andres/4.jpg',
+                                '/images/categorias/interiorismo/Casa San Andres/5.jpg'
                             ]
                         },
                         {
@@ -231,12 +231,12 @@
                             large_land: '',
                             large_construction: '',
                             year: '2013',
-                            main_image: '/images/categorias/residencial/Adriático 63/1.jpg',
+                            main_image: '/images/categorias/residencial/Adriatico 63/1.jpg',
                             images: [
-                                '/images/categorias/residencial/Adriático 63/1.jpg',
-                                '/images/categorias/residencial/Adriático 63/2.jpg',
-                                '/images/categorias/residencial/Adriático 63/3.jpg',
-                                '/images/categorias/residencial/Adriático 63/4.jpg'
+                                '/images/categorias/residencial/Adriatico 63/1.jpg',
+                                '/images/categorias/residencial/Adriatico 63/2.jpg',
+                                '/images/categorias/residencial/Adriatico 63/3.jpg',
+                                '/images/categorias/residencial/Adriatico 63/4.jpg'
                             ]
                         },
                         {
@@ -294,13 +294,13 @@
                             large_land: '160M2',
                             large_construction: '197M2',
                             year: '2012',
-                            main_image: '/images/categorias/residencial/Casa Carcaña 53/1.jpg',
+                            main_image: '/images/categorias/residencial/Casa Carcana 53/1.jpg',
                             images: [
-                                '/images/categorias/residencial/Casa Carcaña 53/1.jpg',
-                                '/images/categorias/residencial/Casa Carcaña 53/2.jpg',
-                                '/images/categorias/residencial/Casa Carcaña 53/3.jpg',
-                                '/images/categorias/residencial/Casa Carcaña 53/4.jpg',
-                                '/images/categorias/residencial/Casa Carcaña 53/5.jpg',
+                                '/images/categorias/residencial/Casa Carcana 53/1.jpg',
+                                '/images/categorias/residencial/Casa Carcana 53/2.jpg',
+                                '/images/categorias/residencial/Casa Carcana 53/3.jpg',
+                                '/images/categorias/residencial/Casa Carcana 53/4.jpg',
+                                '/images/categorias/residencial/Casa Carcana 53/5.jpg',
                             ]
                         },
                         {
@@ -310,12 +310,12 @@
                             large_land: '',
                             large_construction: '',
                             year: 'POR CONCLUIR EN 2018',
-                            main_image: '/images/categorias/residencial/Casa Cortázar/1.jpg',
+                            main_image: '/images/categorias/residencial/Casa Cortazar/1.jpg',
                             images: [
-                                '/images/categorias/residencial/Casa Cortázar/1.jpg',
-                                '/images/categorias/residencial/Casa Cortázar/2.jpg',
-                                '/images/categorias/residencial/Casa Cortázar/3.jpg',
-                                '/images/categorias/residencial/Casa Cortázar/4.jpg',
+                                '/images/categorias/residencial/Casa Cortazar/1.jpg',
+                                '/images/categorias/residencial/Casa Cortazar/2.jpg',
+                                '/images/categorias/residencial/Casa Cortazar/3.jpg',
+                                '/images/categorias/residencial/Casa Cortazar/4.jpg',
                             ]
                         },
                         {
@@ -325,14 +325,14 @@
                             large_land: '170.12M2',
                             large_construction: '266.62M2',
                             year: 'POR CONCLUIR EN 2019',
-                            main_image: '/images/categorias/residencial/Casa Querétaro 35/1.jpg',
+                            main_image: '/images/categorias/residencial/Casa Queretaro 35/1.jpg',
                             images: [
-                                '/images/categorias/residencial/Casa Querétaro 35/1.jpg',
-                                '/images/categorias/residencial/Casa Querétaro 35/2.jpg',
-                                '/images/categorias/residencial/Casa Querétaro 35/3.jpg',
-                                '/images/categorias/residencial/Casa Querétaro 35/4.jpg',
-                                '/images/categorias/residencial/Casa Querétaro 35/5.jpg',
-                                '/images/categorias/residencial/Casa Querétaro 35/6.jpg',
+                                '/images/categorias/residencial/Casa Queretaro 35/1.jpg',
+                                '/images/categorias/residencial/Casa Queretaro 35/2.jpg',
+                                '/images/categorias/residencial/Casa Queretaro 35/3.jpg',
+                                '/images/categorias/residencial/Casa Queretaro 35/4.jpg',
+                                '/images/categorias/residencial/Casa Queretaro 35/5.jpg',
+                                '/images/categorias/residencial/Casa Queretaro 35/6.jpg',
                             ]
                         },
                         {
@@ -551,11 +551,11 @@
                             large_land: '606M2',
                             large_construction: '5,230M2',
                             year: '',
-                            main_image: '/images/categorias/vertical/Teziutlán 53/1.jpg',
+                            main_image: '/images/categorias/vertical/Teziutlan 53/1.jpg',
                             images: [
-                                '/images/categorias/vertical/Teziutlán 53/1.jpg',
-                                '/images/categorias/vertical/Teziutlán 53/2.jpg',
-                                '/images/categorias/vertical/Teziutlán 53/3.jpg'
+                                '/images/categorias/vertical/Teziutlan 53/1.jpg',
+                                '/images/categorias/vertical/Teziutlan 53/2.jpg',
+                                '/images/categorias/vertical/Teziutlan 53/3.jpg'
                                 
                             ]
                         },
